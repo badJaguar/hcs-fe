@@ -1,7 +1,4 @@
 export const PALETTE = {
-  BLUE: '#1D86E7',
-  MEDIUM_BLUE: '#1060AA',
-  DARK_BLUE: '#0B4275',
   GRAY: '#C4C4C4',
   DARKER_GRAY: '#D8D8D8',
   LIGHTER_GRAY: '#F5F5F5',
@@ -26,4 +23,5 @@ export const PALETTE = {
   DARKER_GREEN: ' #00733B',
 
   BACKGROUND_DARK_MODE: '#212121',
+  GOLDEN: '#E3C56C',
 };

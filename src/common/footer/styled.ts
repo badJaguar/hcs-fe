@@ -5,4 +5,5 @@ export const StyledFooter = styled('footer')(({ theme }) => ({
   backgroundColor: theme.palette.background.white,
   display: 'flex',
   alignItems: 'center',
+  width: '100vw',
 }));

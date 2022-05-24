@@ -20,12 +20,6 @@ export default {
     dark: PALETTE.DARKER_GREEN,
     light: PALETTE.PIN_GREEN,
   },
-  blue: {
-    light: PALETTE.BLUE,
-    main: PALETTE.MEDIUM_BLUE,
-    dark: PALETTE.DARK_BLUE,
-    contrastText: PALETTE.WHITE,
-  },
   error: {
     main: PALETTE.ERROR,
     light: PALETTE.ERROR_LIGHT,
@@ -34,14 +28,11 @@ export default {
   },
   text: {
     primary: PALETTE.BLACK,
-    secondary: PALETTE.MEDIUM_BLUE,
     disabled: PALETTE.TEXT_DISABLED,
     mediumGray: PALETTE.MEDIUM_GRAY,
     contrastText: PALETTE.WHITE,
   },
   background: {
-    blue: PALETTE.MEDIUM_BLUE,
-    darkBlue: PALETTE.DARK_BLUE,
     white: PALETTE.WHITE,
     border: PALETTE.GRAY,
     borderLight: PALETTE.LIGHT_GRAY,
@@ -51,5 +42,7 @@ export default {
     darkGray: PALETTE.DARKER_GRAY,
     turquoiseGreen: PALETTE.TURQUOISE,
     darkerGreen: PALETTE.DARKER_GREEN,
+
+    golden: PALETTE.GOLDEN,
   },
 } as PaletteOptions;

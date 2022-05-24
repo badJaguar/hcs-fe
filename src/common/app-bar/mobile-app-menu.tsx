@@ -4,14 +4,15 @@ import Image from 'next/image';
 
 import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Container from '@mui/material/Container';
 
+import Link from 'common/NextLink';
+
 import logo from '../../../assets/logo.svg';
-import { PAGES } from './utils/constants';
+import { PAGES_WEB } from './utils/constants';
 
 const MobileAppMenu = () => {
 
@@ -61,9 +62,9 @@ const MobileAppMenu = () => {
           display: { xs: 'block', md: 'none' },
         }}
       >
-        {PAGES.map((page) => (
-          <MenuItem key={page} onClick={handleCloseNavMenu}>
-            <Typography color="primary.dark" textAlign="center">{page}</Typography>
+        {PAGES_WEB.map(p => (
+          <MenuItem key={p.label} onClick={handleCloseNavMenu}>
+            <Link sx={{ textDecoration: 'none' }} href={p.value}>{p.label}</Link>
           </MenuItem>
         ))}
       </Menu>

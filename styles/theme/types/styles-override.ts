@@ -37,16 +37,13 @@ export type PaletteOptionsOverriden = {
     mediumGray: string;
   };
   background: {
-    blue: string;
-    darkBlue: string;
     white: string;
     border: string;
     borderLight: string;
     gray: string;
     lightGray: string;
     darkGray: string;
-    turquoiseGreen: string;
-    darkerGreen: string;
+    golden: string;
   };
   mode: PaletteMode;
 };
