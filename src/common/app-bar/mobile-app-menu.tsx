@@ -11,7 +11,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Container from '@mui/material/Container';
 
 import logo from '../../../assets/logo.svg';
-import { PAGES } from './constants';
+import { PAGES } from './utils/constants';
 
 const MobileAppMenu = () => {
 

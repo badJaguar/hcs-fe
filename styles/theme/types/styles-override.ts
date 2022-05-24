@@ -1,4 +1,5 @@
 import { PaletteMode } from "@mui/material";
+import { Spacing } from "@mui/system";
 
 export type PaletteOptionsOverriden = {
   primary: {
@@ -64,4 +65,11 @@ declare module '@mui/styles/defaultTheme' {
   }
 
   type PaletteOptions = PaletteOptionsOverriden;
+}
+
+declare module '@emotion/react' {
+  export interface Theme {
+    palette: PaletteOptionsOverriden;
+    spacing: Spacing;
+  }
 }

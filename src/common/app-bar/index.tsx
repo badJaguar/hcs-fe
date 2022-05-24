@@ -4,7 +4,6 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 
 import { Container } from '@mui/material';
 import Image from 'next/image';
@@ -12,7 +11,8 @@ import Image from 'next/image';
 import logo from '../../../assets/logo.svg';
 import MobileAppMenu from './mobile-app-menu';
 import DesktopAppMenu from './desktop-app-menu';
-import { CALL_BACK } from './constants';
+import { CALL_BACK } from './utils/constants';
+import { CallBackButtonStyled } from './utils/styled';
 
 const ResponsiveAppBar = () => {
 
@@ -39,9 +39,9 @@ const ResponsiveAppBar = () => {
           <DesktopAppMenu />
 
           <Box sx={{ flexGrow: 0 }}>
-            <Button variant="contained" sx={{ py: 3.5, px: 8, backgroundColor: '#E3C56C' }}>
+            <CallBackButtonStyled variant="contained">
               <Typography textAlign="center">{CALL_BACK}</Typography>
-            </Button>
+            </CallBackButtonStyled>
           </Box>
         </Toolbar>
       </Container>

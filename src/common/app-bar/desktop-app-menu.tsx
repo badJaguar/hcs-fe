@@ -2,9 +2,9 @@ import * as React from 'react';
 
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 
-import { PAGES } from './constants';
+import { PAGES } from './utils/constants';
+import { MenuItemButtonStyled } from './utils/styled';
 
 const DesktopAppMenu = () => {
 
@@ -16,14 +16,12 @@ const DesktopAppMenu = () => {
       display: { xxs: 'none', md: 'flex' }
     }}>
       {PAGES.map((page) => (
-        <Button
-          key={page}
-          sx={{ my: 2, mx: 1, color: 'primary.dark', display: 'block' }}
-        >
+        <MenuItemButtonStyled key={page}>
           <Typography variant="subtitle1" textAlign="center">{page}</Typography>
-        </Button>
-      ))}
-    </Box>
+        </MenuItemButtonStyled>
+      ))
+      }
+    </Box >
   );
 };
 
