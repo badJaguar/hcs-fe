@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 
 import Base from './_base';
 
-const Seo: NextPage = () => {
+const ContactUs: NextPage = () => {
   return (
     <Base headTitle="Hermes Corporate Solutions | SEO">
       <h1>
@@ -12,4 +12,4 @@ const Seo: NextPage = () => {
   );
 };
 
-export default Seo;
+export default ContactUs;
