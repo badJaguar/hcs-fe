@@ -6,17 +6,17 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
   '@global': {
     '*::-webkit-scrollbar-track': {
       borderRadius: '10px',
-      backgroundColor: theme.palette.background.gray,
+      backgroundColor: theme.palette.background.lightGray,
     },
     '*::-webkit-scrollbar': {
       width: '8px',
       height: '8px',
-      backgroundColor: theme.palette.background.gray,
+      backgroundColor: theme.palette.background.lightGray,
     },
 
     '*::-webkit-scrollbar-thumb': {
       borderRadius: '50px',
-      backgroundColor: theme.palette.background.border,
+      backgroundColor: theme.palette.border.gray,
     },
 
     'input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active': {
@@ -39,8 +39,7 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
       '-moz-osx-font-smoothing': 'grayscale',
     },
     '#__next': {
-      display: 'flex',
-      flexDirection: 'column',
+      display: 'block',
     },
   },
 }));

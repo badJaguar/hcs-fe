@@ -28,9 +28,14 @@ export default {
   },
   text: {
     primary: PALETTE.BLACK,
+    blue: PALETTE.TEXT_BLUE,
     disabled: PALETTE.TEXT_DISABLED,
     mediumGray: PALETTE.MEDIUM_GRAY,
     contrastText: PALETTE.WHITE,
+  },
+  border: {
+    gray: PALETTE.GRAY,
+    lightGray: PALETTE.LIGHT_GRAY,
   },
   background: {
     white: PALETTE.WHITE,
@@ -42,7 +47,6 @@ export default {
     darkGray: PALETTE.DARKER_GRAY,
     turquoiseGreen: PALETTE.TURQUOISE,
     darkerGreen: PALETTE.DARKER_GREEN,
-
     golden: PALETTE.GOLDEN,
   },
 } as PaletteOptions;

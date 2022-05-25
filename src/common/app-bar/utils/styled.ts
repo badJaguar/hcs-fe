@@ -6,8 +6,3 @@ export const MenuItemButtonStyled = styled(Button)(({ theme }) => ({
   color: 'primary.dark',
   display: 'block',
 }));
-
-export const CallBackButtonStyled = styled(Button)(({ theme }) => ({
-  padding: theme.spacing(3.5, 8),
-  backgroundColor: '#E3C56C'
-}));

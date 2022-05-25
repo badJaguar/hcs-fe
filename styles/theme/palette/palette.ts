@@ -24,4 +24,6 @@ export const PALETTE = {
 
   BACKGROUND_DARK_MODE: '#212121',
   GOLDEN: '#E3C56C',
+  GOLDEN_HOVER: '#bba870',
+  TEXT_BLUE: '#287AE0',
 };

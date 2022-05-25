@@ -1,5 +1,5 @@
 import { PaletteMode } from "@mui/material";
-import { Spacing } from "@mui/system";
+import { Spacing, Shape } from "@mui/system";
 
 export type PaletteOptionsOverriden = {
   primary: {
@@ -32,14 +32,17 @@ export type PaletteOptionsOverriden = {
   };
   text: {
     primary: string;
+    blue: string;
     secondary: string;
     disabled: string;
     mediumGray: string;
   };
+  border: {
+    gray: string;
+    lightGray: string;
+  };
   background: {
     white: string;
-    border: string;
-    borderLight: string;
     gray: string;
     lightGray: string;
     darkGray: string;
@@ -68,5 +71,6 @@ declare module '@emotion/react' {
   export interface Theme {
     palette: PaletteOptionsOverriden;
     spacing: Spacing;
+    shape: Partial<Shape>;
   }
 }

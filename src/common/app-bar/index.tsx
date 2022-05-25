@@ -6,7 +6,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 
-import { Container, IconButton } from '@mui/material';
+import { Button, Container, IconButton } from '@mui/material';
 import Image from 'next/image';
 
 import { useScreenDown } from 'common/hooks/screenSize';
@@ -15,8 +15,6 @@ import logo from '../../../assets/logo.svg';
 import MobileAppMenu from './mobile-app-menu';
 import DesktopAppMenu from './desktop-app-menu';
 import { CALL_BACK } from './utils/constants';
-
-import { CallBackButtonStyled } from './utils/styled';
 
 const ResponsiveAppBar = () => {
   const isDownXs = useScreenDown("xs");
@@ -44,17 +42,19 @@ const ResponsiveAppBar = () => {
           <DesktopAppMenu />
 
           <Box sx={{ flexGrow: 0 }}>
-            {isDownXs ?
-              <IconButton sx={{
-                p: 3,
-                backgroundColor: 'background.golden',
-                color: 'secondary.light'
-              }}>
-                <ContactPhoneIcon />
-              </IconButton>
-              : <CallBackButtonStyled variant="contained">
-                <Typography textAlign="center">{CALL_BACK}</Typography>
-              </CallBackButtonStyled>}
+            {
+              isDownXs ?
+                <IconButton sx={{
+                  p: 3,
+                  backgroundColor: 'background.golden',
+                  color: 'secondary.light'
+                }}>
+                  <ContactPhoneIcon />
+                </IconButton>
+                : <Button variant="contained">
+                  {CALL_BACK}
+                </Button>
+            }
           </Box>
         </Toolbar>
       </Container>
