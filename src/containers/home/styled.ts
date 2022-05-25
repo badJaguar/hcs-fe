@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Box, Grid } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 
 import imageBg from "../../../assets/what-we-can-col.svg";
 import defaultTheme from "../../../styles/theme/defaultTheme";
@@ -36,7 +36,7 @@ export const RecommendationStyled = styled(Grid)({
   maxWidth: 320
 });
 
-export const WhoWeContainerStyled = styled(Box, { label: 'WhoWeContainerStyled' })(({ theme }) => ({
+export const WithoutColumnsSectionStyled = styled(Box, { label: 'WhoWeContainerStyled' })(({ theme }) => ({
   padding: theme.spacing(20, 4),
   backgroundColor: theme.palette.secondary.light,
   width: '100%',
@@ -54,7 +54,7 @@ export const ImageGridContainerStyled = styled(Grid)(({ theme }) => ({
   }
 }));
 
-export const WhatWeCanContainerStyled = styled(Box, { label: 'WhatWeCanContainerStyled' })({
+export const CulumnsStyledSectionStyled = styled(Box, { label: 'WhatWeCanContainerStyled' })({
   width: '100%',
   position: 'relative',
   display: 'flex',
@@ -91,3 +91,12 @@ export const WhatWeCanStyled = styled(Grid, { label: 'WhatWeCanStyled' })({
   alignItems: "center",
   textAlign: "center",
 });
+
+export const WhoWeAreTitle = styled(Typography)(({ theme }) => ({
+  '&::before': {
+    content: '""',
+    borderLeft: `3px solid ${theme.palette.background.golden}`,
+    marginLeft: theme.spacing(-5),
+    paddingRight: theme.spacing(4),
+  }
+}));

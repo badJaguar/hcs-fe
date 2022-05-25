@@ -23,3 +23,4 @@ export const PAGES_WEB = [
   }] as const;
 
 export const CALL_BACK = 'Call Back' as const;
+export const COMPANT_NUMBER = '+1-754-755-1696' as const;

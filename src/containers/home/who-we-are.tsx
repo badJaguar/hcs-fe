@@ -6,13 +6,13 @@ import { useScreenDown } from "common/hooks/screenSize";
 
 import image from "/assets/team.png";
 
-import { ImageGridContainerStyled, WhoWeContainerStyled } from "./styled";
+import { ImageGridContainerStyled, WithoutColumnsSectionStyled } from "./styled";
 
 const WhoWeAre = () => {
   const isDownMd = useScreenDown("md");
 
   return (
-    <WhoWeContainerStyled component="section">
+    <WithoutColumnsSectionStyled component="section">
       <Grid container maxWidth="lg" gap={5}>
         <Grid item xs={6} >
           <Typography
@@ -28,7 +28,7 @@ const WhoWeAre = () => {
           <Image src={image} />
         </ImageGridContainerStyled>
       </Grid>
-    </WhoWeContainerStyled>
+    </WithoutColumnsSectionStyled>
   );
 };
 

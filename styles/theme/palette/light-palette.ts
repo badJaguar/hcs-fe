@@ -48,5 +48,6 @@ export default {
     turquoiseGreen: PALETTE.TURQUOISE,
     darkerGreen: PALETTE.DARKER_GREEN,
     golden: PALETTE.GOLDEN,
+    darkenGolden: PALETTE.GOLDEN_HOVER,
   },
 } as PaletteOptions;
