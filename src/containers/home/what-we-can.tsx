@@ -14,7 +14,7 @@ const WhatWeCan = () => {
   const isDownMd = useScreenDown("md");
 
   return (
-    <WhatWeCanContainerStyled>
+    <WhatWeCanContainerStyled component="section">
       <WhatWeCanStyled container maxWidth="lg" sx={{ px: { xxs: 2, md: 4 } }}>
         <Grid item xs={6} sx={{ pb: { xxs: 4, md: 15 } }}>
           <Typography
@@ -23,7 +23,7 @@ const WhatWeCan = () => {
           >
             {WHAT_WE.TITLE}
           </Typography>
-          <Typography variant="body1" sx={{ mb: 4 }}>{WHAT_WE.CONTENT_1}</Typography>
+          <Typography component="article" variant="body1" sx={{ mb: 4 }}>{WHAT_WE.CONTENT_1}</Typography>
         </Grid>
         <Grid container flexDirection="row" gap={10} justifyContent="center" width="100%" zIndex={1}>
           <Paper elevation={15} sx={{ borderRadius: 'shape.borderRadius', p: 6, maxWidth: 270 }}>

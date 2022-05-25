@@ -12,12 +12,13 @@ const MainBanner = () => {
   const isDownMd = useScreenDown("md");
 
   return (
-    <Box sx={{ position: "relative" }}>
+    <Box sx={{ position: "relative" }} component="section">
       <GreetingsStyled sx={{ top: isDownMd ? 0 : '10%' }}>
         <Typography variant={isDownMd ? "h4" : "h2"} color="secondary">
           {TEXT.TITLE}
         </Typography>
         <Typography
+          component="article"
           variant={isDownXs ? "subtitle2" : "subtitle1"}
           color="secondary"
           sx={{

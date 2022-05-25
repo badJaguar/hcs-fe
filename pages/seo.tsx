@@ -4,7 +4,7 @@ import Base from './_base';
 
 const Home: NextPage = () => {
   return (
-    <Base headTitle="SEO">
+    <Base headTitle="Hermes Corporate Solutions | SEO">
       <h1>
         Welcome to SEO
       </h1>
