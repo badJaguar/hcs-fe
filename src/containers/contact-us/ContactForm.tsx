@@ -1,11 +1,14 @@
 import { useForm } from "react-hook-form";
 
-import { FormControl, Grid, Typography } from "@mui/material";
+import { Button, FormControl, Grid, Typography } from "@mui/material";
 
 import ReactHookFormTextFieldOutlined from "common/react-hook-forms/ReactHookFormTextFieldOutlined";
 
 import { EmailFieldValues } from "./types";
 import { getKeyOf } from "../../../utility/helpers";
+import ReactHookFormPhoneInput from "common/react-hook-forms/ReactHookFormPhoneInput";
+
+import 'react-phone-number-input/style.css';
 
 const ContactForm = () => {
   const formValues = useForm<EmailFieldValues>({ mode: 'onChange', criteriaMode: 'all' });
@@ -20,6 +23,7 @@ const ContactForm = () => {
       xs={5}
       component="form"
       onSubmit={formValues.handleSubmit(handleSaveProject)}
+      sx={{ width: '100%' }}
     >
       <Typography variant="body1">Name</Typography>
       <FormControl fullWidth sx={{ mt: 2 }}>
@@ -44,16 +48,33 @@ const ContactForm = () => {
         />
       </FormControl>
       <Typography variant="body1" sx={{ mt: 6 }}>Phone number</Typography>
+      <FormControl fullWidth sx={{ mt: 2, '.PhoneInputCountry': { display: 'none' } }}>
+        <ReactHookFormPhoneInput
+          control={formValues.control}
+          name={getKeyOf<EmailFieldValues>('phoneNumber')}
+          variant="outlined"
+          type="tel"
+        />
+      </FormControl>
+      <Typography variant="body1" sx={{ mt: 6 }}>How can we help?</Typography>
       <FormControl fullWidth sx={{ mt: 2 }}>
         <ReactHookFormTextFieldOutlined
           control={formValues.control}
-          placeholder="your@email.com"
-          name={getKeyOf<EmailFieldValues>('phoneNumber')}
-          type="text"
+          name={getKeyOf<EmailFieldValues>('question')}
+          placeholder="Message"
           variant="outlined"
+          type="text"
           required
+          multiline
+          rows={4}
         />
       </FormControl>
+      <Button
+        type="submit"
+        variant="contained"
+        fullWidth
+        sx={{ mt: 8 }}
+      >Send</Button>
     </Grid>
   );
 };

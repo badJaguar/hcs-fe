@@ -18,6 +18,7 @@ export const ContactUs = () => {
           py: { xxs: 5, md: 15 },
           zIndex: 2,
           mx: 4,
+          my: 4,
           backgroundColor: '#ffffffb0'
         }}>
         <Grid
