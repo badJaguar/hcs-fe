@@ -14,7 +14,14 @@ const ContactForm = () => {
   const formValues = useForm<EmailFieldValues>({ mode: 'onChange', criteriaMode: 'all' });
 
   const handleSaveProject = (values: EmailFieldValues): void => {
-    console.log(values);
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(values)
+    });
   };
 
   return (
