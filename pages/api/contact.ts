@@ -47,6 +47,5 @@ export default function (
       console.log(info);
   });
 
-  res.status(200);
-  // res.send(req.body);
+  res.status(200).send(req.body);
 }
