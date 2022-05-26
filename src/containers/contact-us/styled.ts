@@ -17,7 +17,7 @@ export const ContactUsWrapperStyled = styled(Box)(
 
     [defaultTheme.breakpoints.down("xs")]: {
       padding: theme.spacing(4, 4),
-    }
+    },
   }));
 
 export const ContactUsContainerStyled = styled(Box, { label: 'ContactUsContainerStyled' })(
@@ -25,6 +25,10 @@ export const ContactUsContainerStyled = styled(Box, { label: 'ContactUsContainer
     display: 'flex',
     justifyContent: 'center',
     backgroundColor: theme.palette.background.blue,
+
+    [defaultTheme.breakpoints.down("md")]: {
+      margin: theme.spacing(4, 0),
+    },
   }));
 
 export const BlueBgInsertStyled = styled(Box)({

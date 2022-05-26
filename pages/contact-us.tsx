@@ -12,7 +12,7 @@ const ContactUs: NextPage = () => {
         <>
           <meta name="keywords" content="Keyword1, Keyword2, Keyword3" />
           <meta name="description" content={"Contact with Hermes Corporate Solutions"} />
-          <meta property="og:title" content="Hermes Corporate Solutions | Home" />
+          <meta property="og:title" content="Hermes Corporate Solutions | Contact Us" />
           <meta property="og:description" content={'Contact with Hermes Corporate Solutions'} />
           <meta property="og:locale" content="en_US" />
           <meta property="og:type" content="article" />
