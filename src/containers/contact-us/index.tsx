@@ -23,7 +23,7 @@ export const ContactUs = () => {
         <Grid
           container
           direction="row"
-          wrap="nowrap"
+          justifyContent="space-between"
         >
           <ContactInfo />
           <ContactForm />
