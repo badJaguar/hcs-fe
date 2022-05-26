@@ -21,6 +21,16 @@ const ContactForm = () => {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(values)
+    }).then((res) => {
+      if (res.status === 200) {
+        formValues.reset({
+          email: '',
+          name: '',
+          phoneNumber: '',
+          question: ''
+        });
+        // TODO: Add notification
+      }
     });
   };
 
