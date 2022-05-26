@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useRouter } from 'next/router';
 
 import Image from 'next/image';
 
@@ -15,6 +16,7 @@ import logo from '../../../assets/logo.svg';
 import { PAGES_WEB } from './utils/constants';
 
 const MobileAppMenu = () => {
+  const router = useRouter();
 
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
 
@@ -25,6 +27,8 @@ const MobileAppMenu = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
+  const handleClick = () => router.push('/');
 
   return (
 
@@ -68,7 +72,7 @@ const MobileAppMenu = () => {
           </MenuItem>
         ))}
       </Menu>
-      <Container sx={{ ml: 4 }}>
+      <Container onClick={handleClick} sx={{ ml: { xs: 'auto', md: 4 }, cursor: 'pointer' }}>
         <Image src={logo} alt="Vercel Logo" height={70} />
       </Container>
     </Box>

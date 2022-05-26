@@ -19,7 +19,7 @@ export const GreetingsStyled = styled(Box, { label: 'GreetingsStyled' })({
   height: '256px',
 
   [defaultTheme.breakpoints.down("md")]: {
-    height: '200px',
+    height: '90px',
   }
 });
 

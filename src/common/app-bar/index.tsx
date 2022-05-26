@@ -1,9 +1,9 @@
 import * as React from 'react';
+import { useRouter } from 'next/router';
 
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import CallIcon from '@mui/icons-material/Call';
 
 import { Button, Container, IconButton } from '@mui/material';
@@ -15,31 +15,39 @@ import logo from '../../../assets/logo.svg';
 
 import MobileAppMenu from './mobile-app-menu';
 import DesktopAppMenu from './desktop-app-menu';
-import { CALL_BACK, COMPANT_NUMBER } from './utils/constants';
+import { CALL_BACK } from './utils/constants';
+import { COMPANY_NUMBER } from 'utils/constants';
 
 const ResponsiveAppBar = () => {
+  const router = useRouter();
   const isDownXs = useScreenDown("xs");
 
-  const simulateCall = () => window.open(`tel:${COMPANT_NUMBER}`, '_self');
+  const simulateCall = () => window.open(`tel:${COMPANY_NUMBER}`, '_self');
+
+  const handleClick = () => router.push('/');
 
   return (
     <AppBar
-      elevation={0}
-      position="static"
-      sx={{ width: 'auto', backgroundColor: "secondary.light" }}
+      elevation={6}
+      position="sticky"
+      sx={{
+        width: 'auto',
+        backgroundColor: "secondary.light"
+      }}
     >
       <Container maxWidth="lg" sx={{ margin: 'auto' }}>
         <Toolbar disableGutters>
-          <Typography
-            noWrap
-            component="a"
-            href="/"
-            sx={{ display: { xxs: 'none', md: 'flex' } }}
+          <Container
+            onClick={handleClick}
+            sx={{
+              ml: 4,
+              display: { xxs: 'none', md: 'flex' },
+              width: 'auto',
+              cursor: 'pointer'
+            }}
           >
-            <Container sx={{ ml: 4 }}>
-              <Image src={logo} alt="Vercel Logo" height={70} />
-            </Container>
-          </Typography>
+            <Image src={logo} alt="Vercel Logo" height={70} />
+          </Container>
 
           <MobileAppMenu />
           <DesktopAppMenu />

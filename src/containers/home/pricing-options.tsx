@@ -1,16 +1,15 @@
 import { Grid, Paper, Typography } from "@mui/material";
 
-import { TAB_TEXT, WHAT_WE } from "common/text/what-we";
+import { TAB_TEXT, WHAT_WE } from "common/text/pricing-options";
 import { useScreenDown } from "common/hooks/screenSize";
 
 import BulbIcon from "../../../assets/icons/bulb-icon";
 import HandshakeIcon from "../../../assets/icons/handshake-icon";
 import StatisticsDocIcon from "../../../assets/icons/statistics-doc-icon";
-import CalendarIcon from "../../../assets/icons/calendar-icon";
 
 import { CulumnsStyledSectionStyled, WhatWeCanStyled } from "./styled";
 
-const WhatWeCan = () => {
+const PricingOptions = () => {
   const isDownMd = useScreenDown("md");
 
   return (
@@ -41,15 +40,10 @@ const WhatWeCan = () => {
             <Typography sx={{ py: 3 }} variant="h5">Lorem Ipsum</Typography>
             <Typography variant="body1">{TAB_TEXT}</Typography>
           </Paper>
-          <Paper elevation={15} sx={{ p: 6, maxWidth: 270 }}>
-            <CalendarIcon sx={{ height: 56, width: 56 }} />
-            <Typography sx={{ py: 3 }} variant="h5">Lorem Ipsum</Typography>
-            <Typography variant="body1">{TAB_TEXT}</Typography>
-          </Paper>
         </Grid>
       </WhatWeCanStyled>
     </CulumnsStyledSectionStyled>
   );
 };
 
-export default WhatWeCan;
+export default PricingOptions;

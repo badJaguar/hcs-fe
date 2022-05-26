@@ -5,7 +5,7 @@ import { WHO_WE } from 'common/text/who-we';
 import { Home as HomeComponent } from '../src/containers/home';
 
 import Base from './_base';
-import image from "/assets/hemes-home.png";
+import image from "/assets/hermes-home.jpg";
 
 const Home: NextPage = () => {
   return (

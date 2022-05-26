@@ -1,4 +1,5 @@
-export const TITLE = "Lorem Ipsum is simply dummy" as const;
+export const SLOGAN_1 = "Be seen! Get on Top!" as const;
+export const SLOGAN_2 = "Your journey starts today" as const;
 
 export const GREETINGS = "Of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to Of the printing and typesetting industry." as const;
 

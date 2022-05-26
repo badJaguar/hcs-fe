@@ -3,31 +3,32 @@ import Image from "next/image";
 
 import * as TEXT from "common/text/home";
 import { useScreenDown } from "common/hooks/screenSize";
-import image from "/assets/hemes-home.png";
+import image from "/assets/hermes-home.jpg";
 
 import { GreetingsStyled } from "./styled";
 
 const MainBanner = () => {
-  const isDownXs = useScreenDown("xs");
   const isDownMd = useScreenDown("md");
 
   return (
     <Box sx={{ position: "relative" }} component="section">
       <GreetingsStyled sx={{ top: isDownMd ? 0 : '10%' }}>
-        <Typography variant={isDownMd ? "h4" : "h2"} color="secondary">
-          {TEXT.TITLE}
+        <Typography
+          variant={isDownMd ? "h5" : "h2"}
+          color="secondary"
+        >
+          {TEXT.SLOGAN_1}
         </Typography>
         <Typography
-          component="article"
-          variant={isDownXs ? "subtitle2" : "subtitle1"}
+          variant={isDownMd ? "h5" : "h2"}
           color="secondary"
-          sx={{
-            mt: { xxs: 4, md: 8 },
-            lineHeight: 1.5
-          }}>
-          {TEXT.GREETINGS}
+        >
+          {TEXT.SLOGAN_2}
         </Typography>
-        <Button variant="contained" sx={{ mt: 10, px: 16 }}>
+        <Button
+          variant="contained"
+          sx={{ mt: { xxs: 4, md: 10 }, px: 16 }}
+        >
           {TEXT.CONTACT_US}
         </Button>
       </GreetingsStyled>
