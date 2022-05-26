@@ -48,6 +48,7 @@ export type PaletteOptionsOverriden = {
     darkGray: string;
     golden: string;
     darkenGolden: string;
+    blue: string;
   };
   mode: PaletteMode;
 };

@@ -23,7 +23,7 @@ const ContactForm = () => {
       xs={5}
       component="form"
       onSubmit={formValues.handleSubmit(handleSaveProject)}
-      sx={{ width: '100%' }}
+      sx={{ width: '100%', pt: { xxs: 8, xs: 0 } }}
     >
       <Typography variant="body1">Name</Typography>
       <FormControl fullWidth sx={{ mt: 2 }}>
