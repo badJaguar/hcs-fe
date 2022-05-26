@@ -11,8 +11,8 @@ type Data = EmailFieldValues;
 const createEmailHTML = (data: Data) => {
   return `
   <h2>Emailer: ${data.name}</h2>
-  <h4>Phone number: ${data.phoneNumber}</h4>
-  <p><b>Message:</b></p>
+    <h4>Phone number: ${data.phoneNumber}</h4>
+    <p><b>Message:</b></p>
   <p>${data.question}</p>
   `;
 };
@@ -45,7 +45,7 @@ export default function (
       console.error(err);
     else
       console.log(info);
+    res.status(200).send(req.body);
   });
 
-  res.status(200).send(req.body);
 }
