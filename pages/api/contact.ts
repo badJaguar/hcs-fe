@@ -28,7 +28,7 @@ export default function (
     host: "smtp.gmail.com",
     auth: {
       user: 'bad.bad.jaguar@gmail.com',
-      pass: process.env.NEXT_PUBLIC_PASSWORD,
+      pass: 'xxaqovldwzzkolfj',
     },
     secure: true,
   });
