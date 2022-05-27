@@ -27,15 +27,15 @@ export default function (
     port: 465,
     host: "smtp.gmail.com",
     auth: {
-      user: 'bad.bad.jaguar@gmail.com',
-      pass: 'xxaqovldwzzkolfj',
+      user: 'info@hermesolutions-llc.com',
+      pass: 'vdjnvggyheydkykz',
     },
     secure: true,
   });
 
   const mailData = {
     from: body.email,
-    to: ['alexander.ataakgayev@mbicycle.com'],
+    to: ['info@hermesolutions-llc.com'],
     subject: `Message From ${req.body.name}`,
     text: `Phone: ${body.phoneNumber} Message: ${body.question}`,
     html: createEmailHTML(req.body)
