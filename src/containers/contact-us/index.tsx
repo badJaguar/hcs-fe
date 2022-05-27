@@ -15,8 +15,9 @@ export const ContactUs = () => {
           sx={{
             position: 'relative',
             maxWidth: 'lg',
-            px: { xs: 8, md: 25 },
-            py: { xs: 5, md: 15 },
+            px: { xxs: 8, md: 25 },
+            py: { xxs: 5, md: 15 },
+            p: 4,
             zIndex: 2,
             margin: 4,
           }}>
