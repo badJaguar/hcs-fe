@@ -6,9 +6,13 @@ import { useScreenDown } from "common/hooks/screenSize";
 import image from "/assets/hermes-home.jpg";
 
 import { GreetingsStyled } from "./styled";
+import { useRouter } from "next/router";
 
 const MainBanner = () => {
   const isDownMd = useScreenDown("md");
+  const router = useRouter();
+
+  const clickHandle = () => router.push('/contact-us');
 
   return (
     <Box sx={{ position: "relative" }} component="section">
@@ -28,6 +32,7 @@ const MainBanner = () => {
         <Button
           variant="contained"
           sx={{ mt: { xxs: 4, md: 10 }, px: 16 }}
+          onClick={clickHandle}
         >
           {TEXT.CONTACT_US}
         </Button>

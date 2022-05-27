@@ -54,11 +54,12 @@ export const ImageGridContainerStyled = styled(Grid)(({ theme }) => ({
   }
 }));
 
-export const CulumnsStyledSectionStyled = styled(Box, { label: 'WhatWeCanContainerStyled' })({
+export const CulumnsStyledSectionStyled = styled(Box, { label: 'WhatWeCanContainerStyled' })(({ theme }) => ({
   width: '100%',
   position: 'relative',
   display: 'flex',
   justifyContent: 'center',
+  paddingBottom: theme.spacing(6),
   minHeight: 660,
   '&::before': {
     content: '""',
@@ -80,7 +81,7 @@ export const CulumnsStyledSectionStyled = styled(Box, { label: 'WhatWeCanContain
     backgroundImage: `url(${imageBg.src})`,
     WebkitBackgroundSize: '100%',
   }
-});
+}));
 
 export const WhatWeCanStyled = styled(Grid, { label: 'WhatWeCanStyled' })({
   height: '100%',
