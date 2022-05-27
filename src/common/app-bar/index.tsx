@@ -48,10 +48,8 @@ const ResponsiveAppBar = () => {
           >
             <Image src={logo} alt="Hermes Corporate Solutions Logo" height={70} />
           </Container>
-
           <MobileAppMenu />
           <DesktopAppMenu />
-
           <Box sx={{ flexGrow: 0 }}>
             {
               isDownXs ?

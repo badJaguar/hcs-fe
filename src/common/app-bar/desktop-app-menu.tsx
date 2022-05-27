@@ -32,21 +32,23 @@ const DesktopAppMenu = () => {
       pr: 3,
       display: { xxs: 'none', md: 'flex' }
     }}>
-      {isUpMd && <TabContext value={value}>
-        <Box>
-          <TabList onChange={handleChange} aria-label="tabs">
-            {PAGES_WEB.map((p) => (
-              <Tab
-                key={p.label}
-                component={Link}
-                href={p.value}
-                label={p.label}
-                value={p.value}
-              />
-            ))}
-          </TabList>
-        </Box>
-      </TabContext>}
+      {
+        isUpMd && <TabContext value={value}>
+          <Box>
+            <TabList onChange={handleChange} aria-label="tabs">
+              {PAGES_WEB.map((p) => (
+                <Tab
+                  key={p.label}
+                  component={Link}
+                  href={p.value}
+                  label={p.label}
+                  value={p.value}
+                />
+              ))}
+            </TabList>
+          </Box>
+        </TabContext>
+      }
     </Box >
   );
 };

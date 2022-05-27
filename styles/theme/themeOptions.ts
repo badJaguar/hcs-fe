@@ -6,6 +6,7 @@ import defaultTheme from './defaultTheme';
 import lightPalette from './palette/light-palette';
 import shape from './shape';
 import typography from './typography';
+import shadows from './shadows';
 
 const themeOptions: ThemeOptions = {
   components,
@@ -14,6 +15,7 @@ const themeOptions: ThemeOptions = {
   breakpoints,
   spacing: defaultTheme.spacing,
   palette: lightPalette,
+  shadows
 };
 
 export default themeOptions;

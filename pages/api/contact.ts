@@ -35,11 +35,12 @@ export default function (
 
   const mailData = {
     from: body.email,
-    to: ['bad.bad.jaguar@gmail.com', 'alexander.ataakgayev@mbicycle.com'],
+    to: ['alexander.ataakgayev@mbicycle.com'],
     subject: `Message From ${req.body.name}`,
     text: `Phone: ${body.phoneNumber} Message: ${body.question}`,
     html: createEmailHTML(req.body)
   };
+
   transporter.sendMail(mailData, function (err, info) {
     if (err)
       console.error(err);

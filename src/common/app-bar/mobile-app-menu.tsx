@@ -46,7 +46,7 @@ const MobileAppMenu = () => {
           margin: 'auto'
         }}
       >
-        <MenuIcon />
+        <MenuIcon fontSize="large" />
       </IconButton>
       <Menu
         id="menu-appbar"
@@ -72,14 +72,19 @@ const MobileAppMenu = () => {
           </MenuItem>
         ))}
       </Menu>
-      <Container onClick={handleClick} sx={{ ml: { xs: 'auto', md: 4 }, cursor: 'pointer' }}>
+      <Container
+        onClick={handleClick}
+        sx={{
+          ml: { xs: 'auto', md: 4 },
+          cursor: 'pointer'
+        }}
+      >
         <Image
           src={logo}
           alt="Hermes Corporate Solutions Logo"
-          width={280}
-          // height={30}
-          layout="fill"
-          sizes="5vh"
+          width={190}
+          layout="fixed"
+          sizes="5vw"
         />
       </Container>
     </Box>
