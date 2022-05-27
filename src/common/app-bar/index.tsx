@@ -56,6 +56,7 @@ const ResponsiveAppBar = () => {
             {
               isDownXs ?
                 <IconButton
+                  aria-label="Call Button"
                   onClick={simulateCall}
                   sx={{
                     p: 3,
