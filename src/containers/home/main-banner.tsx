@@ -38,7 +38,7 @@ const MainBanner = () => {
         </Button>
       </GreetingsStyled>
       <Box maxWidth="xxl" sx={{ backgroundColor: "background.lightGray" }}>
-        <Image src={image} />
+        <Image src={image} alt="Hermes home" />
       </Box>
       {/* <RecommendationsContainerStyled container>
         <RecommendationStyled item container>

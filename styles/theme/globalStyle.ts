@@ -38,6 +38,9 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
       '-webkit-font-smoothing': 'antialiased',
       '-moz-osx-font-smoothing': 'grayscale',
     },
+    html: {
+      fontSize: '62.5%',
+    },
     '#__next': {
       display: 'block',
     },

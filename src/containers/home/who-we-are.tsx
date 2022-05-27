@@ -25,7 +25,7 @@ const WhoWeAre = () => {
           <Typography component="article" variant="body1">{WHO_WE.CONTENT_2}</Typography>
         </Grid>
         <ImageGridContainerStyled item xs={5} >
-          <Image src={image} />
+          <Image src={image} alt="Our team" />
         </ImageGridContainerStyled>
       </Grid>
     </WithoutColumnsSectionStyled>

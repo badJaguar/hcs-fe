@@ -46,7 +46,7 @@ const ResponsiveAppBar = () => {
               cursor: 'pointer'
             }}
           >
-            <Image src={logo} alt="Vercel Logo" height={70} />
+            <Image src={logo} alt="Hermes Corporate Solutions Logo" height={70} />
           </Container>
 
           <MobileAppMenu />

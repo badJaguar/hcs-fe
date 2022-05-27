@@ -15,7 +15,7 @@ const WhyUs = () => {
     <WithoutColumnsSectionStyled component="section">
       <Grid container maxWidth="lg" gap={5}>
         <ImageGridContainerStyled item xs={5}>
-          <Image src={image} />
+          <Image src={image} alt="Our team" />
         </ImageGridContainerStyled>
         <Grid item xs={6} gap={6}>
           <Typography
