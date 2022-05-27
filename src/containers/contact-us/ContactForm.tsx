@@ -1,17 +1,32 @@
+import React from "react";
 import { useForm } from "react-hook-form";
 
-import { Button, FormControl, Grid, Typography } from "@mui/material";
+import {
+  Button, FormControl,
+  Grid, IconButton,
+  Snackbar, Typography
+} from "@mui/material";
+import CloseIcon from '@mui/icons-material/Close';
+import Slide, { SlideProps } from '@mui/material/Slide';
 
 import ReactHookFormTextFieldOutlined from "common/react-hook-forms/ReactHookFormTextFieldOutlined";
+import ReactHookFormPhoneInput from "common/react-hook-forms/ReactHookFormPhoneInput";
 
 import { EmailFieldValues } from "./types";
 import { getKeyOf } from "../../../utility/helpers";
-import ReactHookFormPhoneInput from "common/react-hook-forms/ReactHookFormPhoneInput";
 
 import 'react-phone-number-input/style.css';
 
+type TransitionProps = Omit<SlideProps, 'direction'>;
+
+function TransitionLeft(props: TransitionProps) {
+  return <Slide {...props} direction="left" />;
+}
+
 const ContactForm = () => {
   const formValues = useForm<EmailFieldValues>({ mode: 'onChange', criteriaMode: 'all' });
+
+  const [open, setOpen] = React.useState(false);
 
   const handleSaveProject = (values: EmailFieldValues): void => {
     fetch('/api/contact', {
@@ -29,10 +44,31 @@ const ContactForm = () => {
           phoneNumber: '',
           question: ''
         });
-        // TODO: Add notification
+        setOpen(true);
       }
     });
   };
+
+  const handleClose = (event: React.SyntheticEvent | Event, reason?: string) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+  const action = (
+    <React.Fragment>
+      <IconButton
+        size="small"
+        aria-label="close"
+        color="inherit"
+        onClick={handleClose}
+      >
+        <CloseIcon fontSize="small" />
+      </IconButton>
+    </React.Fragment>
+  );
 
   return (
     <Grid
@@ -92,6 +128,17 @@ const ContactForm = () => {
         fullWidth
         sx={{ mt: 8 }}
       >Send</Button>
+      <Snackbar
+        open={open}
+        autoHideDuration={6000}
+        onClose={handleClose}
+        message="Email sent successfully!"
+        action={action}
+        TransitionComponent={TransitionLeft}
+        ContentProps={{
+          sx: { backgroundColor: 'white', color: 'primary.dark', minHeight: 80 }
+        }}
+      />
     </Grid>
   );
 };
