@@ -13,11 +13,6 @@ export const ContactUsWrapperStyled = styled(Box)(
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: theme.palette.background.blue,
-    padding: theme.spacing(0, 4),
-
-    [defaultTheme.breakpoints.down("xs")]: {
-      padding: theme.spacing(4, 4),
-    },
   }));
 
 export const ContactUsContainerStyled = styled(Box, { label: 'ContactUsContainerStyled' })(
