@@ -6,7 +6,6 @@ export default function useLocation() {
   React.useEffect(() => {
     if (typeof window !== 'undefined' && !location) {
       setLocation(window.location);
-      console.log('window.location', window.location);
 
     }
   }, [location]);
