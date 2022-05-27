@@ -26,17 +26,27 @@ const ContactInfo = () => {
       <Container sx={{ pt: { xxs: 4, md: 8 }, display: 'inline-flex', alignItems: 'center' }}>
         <CallIcon sx={{ width: { xxs: 32, md: 48 }, height: { xxs: 32, md: 48 }, mr: 4 }} />
         {/* // TODO: Add colling */}
-        <Typography variant={isDownMd ? "body1" : "caption"}>{COMPANY_NUMBER}</Typography>
+        <Typography
+          component="a"
+          href={`tel:${COMPANY_NUMBER}`}
+          variant={isDownMd ? "body1" : "caption"}
+          color="primary.dark"
+        >{COMPANY_NUMBER}</Typography>
       </Container>
       <Container sx={{ pt: { xxs: 4, md: 8 }, display: 'inline-flex', alignItems: 'center' }}>
         <EmailIcon sx={{ width: { xxs: 32, md: 48 }, height: { xxs: 32, md: 48 }, mr: 4 }} />
-        <Typography variant={isDownMd ? "body1" : "caption"}>{EMAIL}</Typography>
+        <Typography
+          component="a"
+          href={`mailto:${EMAIL}`}
+          variant={isDownMd ? "body1" : "caption"}
+          color="primary.dark"
+        >{EMAIL}</Typography>
       </Container>
       <Container sx={{ pt: { xxs: 4, md: 8 }, display: 'inline-flex', alignItems: 'center' }}>
         <LocationIcon sx={{ width: { xxs: 32, md: 48 }, height: { xxs: 32, md: 48 }, mr: 4 }} />
         <Typography variant={isDownMd ? "body1" : "caption"}>{ADDRESS}</Typography>
       </Container>
-    </Grid>
+    </Grid >
 
   );
 };
