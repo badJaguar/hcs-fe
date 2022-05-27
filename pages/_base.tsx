@@ -15,7 +15,7 @@ const Base: NextPage<BaseProps> = ({ headTitle, children, headElements }: BasePr
     <>
       <Head>
         <title>{headTitle}</title>
-        <meta data-rh="true" name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1" />
+        <meta data-rh="true" name="viewport" maximum-scale="5" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1" />
         <meta data-rh="true" name="robots" content="index,follow,max-image-preview:large" />
         <meta data-rh="true" name="referrer" content="unsafe-url" />
 
