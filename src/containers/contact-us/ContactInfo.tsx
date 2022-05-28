@@ -25,7 +25,6 @@ const ContactInfo = () => {
       </Typography>
       <Container sx={{ pt: { xxs: 4, md: 8 }, display: 'inline-flex', alignItems: 'center' }}>
         <CallIcon sx={{ width: { xxs: 32, md: 48 }, height: { xxs: 32, md: 48 }, mr: 4 }} />
-        {/* // TODO: Add colling */}
         <Typography
           component="a"
           href={`tel:${COMPANY_NUMBER}`}

@@ -22,7 +22,6 @@ const Base: NextPage<BaseProps> = ({ headTitle, children, headElements }: BasePr
         <link data-rh="true" rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png" />
         <link data-rh="true" rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png" />
         <link data-rh="true" rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png" />
-        <link data-rh="true" rel="icon" href="/hermes-logo-head.svg" />
         <link data-rh="true" rel="manifest" href="/fav/site.webmanifest" />
         <link data-rh="true" rel="mask-icon" href="/fav/safari-pinned-tab.svg" color="#5bbad5" />
         <meta data-rh="true" name="msapplication-TileColor" content="#da532c" />

@@ -26,6 +26,14 @@ const MyApp: React.FunctionComponent<MyAppProps> = (props) => {
 
   const modedTheme = createTheme({ ...themeOptions, ...getDesignTokens('light') });
 
+  React.useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const loader = document.getElementById('lds-ring');
+      if (loader)
+        loader.style.display = 'none';
+    }
+  }, []);
+
   return (
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={modedTheme}>
