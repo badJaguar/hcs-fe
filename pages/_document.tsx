@@ -3,6 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 import createEmotionServer from '@emotion/server/create-instance';
 // https://dev.to/hajhosein/nextjs-mui-v5-typescript-tutorial-and-starter-3pab
 import createEmotionCache from '../utility/createEmotionCache';
+import loader from '../utility/loader';
 
 export default class MyDocument extends Document {
   render() {
@@ -14,7 +15,20 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
         </Head>
+        <head>
+          <style>
+            {loader}
+          </style>
+        </head>
         <body>
+          <div id="lds-ring" className="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div className="ring-background"></div>
+          </div>
           <Main />
           <NextScript />
         </body>
