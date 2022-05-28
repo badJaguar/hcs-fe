@@ -75,16 +75,18 @@ const MobileAppMenu = () => {
       <Container
         onClick={handleClick}
         sx={{
-          ml: { xs: 'auto', md: 4 },
-          cursor: 'pointer'
+          cursor: 'pointer',
+          position: 'relative',
         }}
       >
         <Image
           src={logo}
           alt="Hermes Corporate Solutions Logo"
-          width={190}
           layout="fixed"
-          sizes="5vw"
+          width={'210px'}
+          height={'65px'}
+          quality={100}
+
         />
       </Container>
     </Box>
