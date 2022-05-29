@@ -7,7 +7,9 @@ const Sitemap = () => {
 
 export const getServerSideProps = async ({ res }: { res: NextApiResponse; }) => {
 
-  const BASE_URL = "http://localhost:3000";
+  const BASE_URL = (process && process.env.NODE_ENV === 'development')
+    ? "http://localhost:3000"
+    : "https://www.hermesolutions-llc.com/";
 
   const staticPaths = fs
     .readdirSync("pages")
