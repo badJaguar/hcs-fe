@@ -1,3 +1,5 @@
+import { useRouter } from "next/router";
+
 import { Button, Divider, Grid, Typography } from "@mui/material";
 
 import { BUTTON_TEXT, TAB_TEXT, WHAT_WE } from "common/text/pricing-options";
@@ -6,6 +8,7 @@ import { useScreenDown } from "common/hooks/screenSize";
 import TickIcon from "../../../assets/icons/tick-icon";
 
 import {
+  BestLabelStyled,
   BluePricingPaperStyled,
   BulletPointContainerStyled,
   BulletPointStyled,
@@ -17,6 +20,11 @@ import {
 
 const PricingOptions = () => {
   const isDownMd = useScreenDown("md");
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push({ pathname: 'contact-us', query: { activatePopup: true } });
+  };
 
   return (
     <CulumnsStyledSectionStyled component="section">
@@ -46,10 +54,18 @@ const PricingOptions = () => {
                 ))
               }
             </BulletPointContainerStyled>
-            <Button variant="contained" fullWidth sx={{ my: 12.5, mt: 29 }}>{BUTTON_TEXT}</Button>
+            <Button
+              variant="contained"
+              onClick={handleClick}
+              fullWidth
+              sx={{ my: 12.5, mt: 29 }}
+            >{BUTTON_TEXT}</Button>
           </WhitePricingPaperStyled>
 
           <BluePricingPaperStyled>
+            <BestLabelStyled>
+              BEST
+            </BestLabelStyled>
             <Typography color="secondary.light" sx={{ py: 3 }} variant="h5">{TAB_TEXT[1].TITLE}</Typography>
             <Typography color="secondary" variant="h3"><sup><small>$</small></sup>{TAB_TEXT[1].PRICE}</Typography>
             <Divider sx={{ my: 12.5, borderColor: 'white' }} />
@@ -63,7 +79,12 @@ const PricingOptions = () => {
                 ))
               }
             </BulletPointContainerStyled>
-            <Button variant="contained" fullWidth sx={{ my: 12.5, mt: 40 }}>{BUTTON_TEXT}</Button>
+            <Button
+              variant="contained"
+              onClick={handleClick}
+              fullWidth
+              sx={{ my: 12.5, mt: 40 }}
+            >{BUTTON_TEXT}</Button>
           </BluePricingPaperStyled>
 
           <WhitePricingPaperStyled>
@@ -80,7 +101,12 @@ const PricingOptions = () => {
                 ))
               }
             </BulletPointContainerStyled>
-            <Button variant="contained" fullWidth sx={{ my: 12.5 }}>{BUTTON_TEXT}</Button>
+            <Button
+              variant="contained"
+              onClick={handleClick}
+              fullWidth
+              sx={{ my: 12.5 }}
+            >{BUTTON_TEXT}</Button>
           </WhitePricingPaperStyled>
         </CardsContainerStyled>
       </WhatWeCanStyled>

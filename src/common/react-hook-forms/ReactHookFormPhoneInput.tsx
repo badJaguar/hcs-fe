@@ -29,7 +29,7 @@ const ReactHookFormPhoneInput = function <T extends FieldValues>({
           onChange={onChange}
           inputComponent={PhoneInput}
           international={false}
-          placeholder="(5555) 000-0000"
+          placeholder="(555) 000-0000"
         />
       )
       }

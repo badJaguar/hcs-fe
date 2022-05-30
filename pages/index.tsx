@@ -8,7 +8,7 @@ import useLocation from '../utility/useLocation';
 
 import Base from './_base';
 import image from "/assets/og-home.webp";
-import { SLOGAN_1, SLOGAN_2 } from 'common/text/home';
+import { SLOGAN_1, SLOGAN_3 } from 'common/text/home';
 
 const Home: NextPage = () => {
   const location = useLocation();
@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       headTitle="Hermes Corporate Solutions | Home"
       headElements={
         <>
-          <meta data-rh="true" name="title" content={`${SLOGAN_1} ${SLOGAN_2}`} />
+          <meta data-rh="true" name="title" content={`${SLOGAN_1} ${SLOGAN_3}`} />
           <meta data-rh="true" name="keywords" content="Keyword1, Keyword2, Keyword3" />
           <meta data-rh="true" name="description" content={`${WHO_WE.CONTENT_1} ${WHO_WE.CONTENT_2}`} />
           <link data-rh="true" rel="canonical" href={location?.href} />

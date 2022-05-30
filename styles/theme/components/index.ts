@@ -1,4 +1,5 @@
 import MuiOutlinedInput from "./MuiOutlinedInput";
+import MuiTypography from "./MuiTypography";
 import MuiSvgIcon from "./MuiSvgIcon";
 import MuiAppBar from "./MuiAppBar";
 import MuiButton from "./MuiButton";
@@ -7,6 +8,7 @@ import MuiTab from "./MuiTab";
 
 const components = {
   MuiOutlinedInput,
+  MuiTypography,
   MuiSvgIcon,
   MuiAppBar,
   MuiButton,

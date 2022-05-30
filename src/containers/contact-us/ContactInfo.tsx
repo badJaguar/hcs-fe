@@ -1,4 +1,4 @@
-import { Container, Grid, Typography } from "@mui/material";
+import { Container, Divider, Grid, Typography } from "@mui/material";
 
 import { useScreenDown } from "common/hooks/screenSize";
 
@@ -7,7 +7,7 @@ import { COMPANY_NUMBER } from "utils/constants";
 import CallIcon from "../../../assets/icons/call-icon";
 import EmailIcon from "../../../assets/icons/email-icon";
 import LocationIcon from "../../../assets/icons/location-icon";
-import { ADDRESS, CONTACT_DESCRIPTION, CONTACT_TITLE, EMAIL } from "./constants";
+import { ADDRESS, CONTACT_TITLE, EMAIL } from "./constants";
 
 const ContactInfo = () => {
   const isDownMd = useScreenDown("md");
@@ -17,12 +17,7 @@ const ContactInfo = () => {
       <Typography variant={isDownMd ? "h4" : "h3"}>
         {CONTACT_TITLE}
       </Typography>
-      <Typography variant={isDownMd ? "body2" : "body1"} sx={{
-        mt: { xxs: 1, md: 3 },
-        lineHeight: 1.5
-      }}>
-        {CONTACT_DESCRIPTION}
-      </Typography>
+      <Divider sx={{ py: 6 }} />
       <Container sx={{ pt: { xxs: 4, md: 8 }, display: 'inline-flex', alignItems: 'center' }}>
         <CallIcon sx={{ width: { xxs: 32, md: 48 }, height: { xxs: 32, md: 48 }, mr: 4 }} />
         <Typography

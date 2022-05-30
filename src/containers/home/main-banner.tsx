@@ -16,26 +16,30 @@ const MainBanner = () => {
 
   return (
     <Box sx={{ position: "relative" }} component="section">
-      <GreetingsStyled sx={{ top: isDownMd ? 0 : '10%' }}>
-        <Typography
-          variant={isDownMd ? "h5" : "h2"}
-          color="secondary"
-        >
-          {TEXT.SLOGAN_1}
+      <GreetingsStyled sx={{
+        top: isDownMd ? 0 : '10%',
+        display: 'flex',
+        height: '100%',
+        justifyContent: 'space-evenly'
+      }}>
+        <Typography variant="h1" color="secondary" fontWeight="500">
+          {TEXT.SLOGAN_3}
         </Typography>
-        <Typography
-          variant={isDownMd ? "h5" : "h2"}
-          color="secondary"
-        >
-          {TEXT.SLOGAN_2}
-        </Typography>
-        <Button
-          variant="contained"
-          sx={{ mt: { xxs: 4, md: 10 }, px: 16 }}
-          onClick={clickHandle}
-        >
-          {TEXT.CONTACT_US}
-        </Button>
+        <Box>
+          <Typography variant="h2" color="secondary" fontWeight="400">
+            {TEXT.SLOGAN_1}
+          </Typography>
+          <Typography variant="h2" color="secondary" fontWeight="400">
+            {TEXT.SLOGAN_2}
+          </Typography>
+          <Button
+            variant="contained"
+            sx={{ mt: { xxs: 4, md: 10 }, px: 16 }}
+            onClick={clickHandle}
+          >
+            {TEXT.CONTACT_US}
+          </Button>
+        </Box>
       </GreetingsStyled>
       <Box maxWidth="xxl" sx={{ backgroundColor: "background.lightGray", width: '100vw' }}>
         <Image

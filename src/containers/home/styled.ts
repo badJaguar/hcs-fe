@@ -16,10 +16,10 @@ export const GreetingsStyled = styled(Box, { label: 'GreetingsStyled' })({
   flexDirection: 'column',
   alignItems: 'center',
   textAlign: 'center',
-  height: '256px',
+  // height: '256px',
 
   [defaultTheme.breakpoints.down("md")]: {
-    height: '90px',
+    // height: '90px',
   }
 });
 
@@ -126,29 +126,8 @@ export const BluePricingPaperStyled = styled(WhitePricingPaperStyled)(({ theme }
   margin: theme.spacing(-6, 0),
   backgroundColor: theme.palette.background.blue,
 
-  '&::before': {
-    content: '"BEST"',
-    position: "absolute",
-    backgroundColor: theme.palette.background.golden,
-    top: -25,
-    marginLeft: theme.spacing(30),
-    marginRight: 'auto',
-    width: 80,
-    height: 40,
-    borderRadius: '0px 0px 6px 6px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontWeight: 600,
-    color: theme.palette.secondary.light,
-    letterSpacing: 1.5
-  },
-
   [defaultTheme.breakpoints.down("xl")]: {
     paddingTop: theme.spacing(10),
-    '&::before': {
-      marginLeft: theme.spacing(32),
-    },
   }
 }));
 
@@ -166,4 +145,21 @@ export const BulletPointStyled = styled(Typography)(({ theme }) => ({
   [defaultTheme.breakpoints.down("xl")]: {
     marginBottom: theme.spacing(3),
   }
+}));
+
+export const BestLabelStyled = styled('div')(({ theme }) => ({
+  content: '"BEST"',
+  backgroundColor: theme.palette.background.golden,
+  marginTop: theme.spacing(-10),
+  marginRight: 'auto',
+  marginLeft: 'auto',
+  width: 80,
+  height: 40,
+  borderRadius: '0px 0px 6px 6px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  fontWeight: 600,
+  color: theme.palette.secondary.light,
+  letterSpacing: 1.5
 }));

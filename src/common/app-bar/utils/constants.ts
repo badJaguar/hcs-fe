@@ -10,7 +10,7 @@ export const PAGES_WEB = [
   //   value: '/seo',
   // },
   {
-    label: 'Digital',
+    label: 'SEO & Digital',
     value: '/digital',
   },
   // {
