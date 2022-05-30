@@ -7,7 +7,7 @@ import { Home as HomeComponent } from '../src/containers/home';
 import useLocation from '../utility/useLocation';
 
 import Base from './_base';
-import image from "/assets/og-home.png";
+import image from "/assets/og-home.webp";
 import { SLOGAN_1, SLOGAN_2 } from 'common/text/home';
 
 const Home: NextPage = () => {
