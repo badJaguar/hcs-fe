@@ -37,8 +37,8 @@ const Home: NextPage = () => {
           <meta data-rh="true" name="og:postal-code" content="33309" />
           <meta data-rh="true" name="og:country-name" content="USA" />
 
-          <meta data-rh="true" property="og:url" content={location?.hostname} />
           <meta property="og:image" content={`${image.src}`} />
+          <meta data-rh="true" property="og:url" content={location?.hostname} />
           <meta property="og:site_name" content="Hermesolutions LLC" />
         </>
       }
