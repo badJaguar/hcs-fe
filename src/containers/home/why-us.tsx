@@ -4,7 +4,7 @@ import Image from "next/image";
 import { WHY_US } from "common/text/why-us";
 import { useScreenDown } from "common/hooks/screenSize";
 
-import image from "/assets/team.png";
+import image from "/assets/why-us.png";
 
 import { ImageGridContainerStyled, WithoutColumnsSectionStyled } from "./styled";
 
