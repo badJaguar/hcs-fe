@@ -12,7 +12,7 @@ import Container from '@mui/material/Container';
 
 import Link from 'common/NextLink';
 
-import logo from '../../../assets/logo.png';
+import logo from '../../../assets/logo.svg';
 import { PAGES_WEB } from './utils/constants';
 
 const MobileAppMenu = () => {
@@ -74,16 +74,15 @@ const MobileAppMenu = () => {
       </Menu>
       <Container
         onClick={handleClick}
-        sx={{
-          cursor: 'pointer',
-          position: 'relative',
-        }}
+        sx={{ cursor: 'pointer' }}
       >
         <Image
           src={logo}
           alt="Hermes Corporate Solutions Logo"
           layout="intrinsic"
           quality={100}
+          height={'70px'}
+          loading="eager"
         />
       </Container>
     </Box>
