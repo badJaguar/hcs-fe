@@ -7,7 +7,7 @@ import { Home as HomeComponent } from '../src/containers/home';
 import useLocation from '../utility/useLocation';
 
 import Base from './_base';
-import image from "/assets/og-home-min.png";
+import image from "/assets/og-home.png";
 import { SLOGAN_1, SLOGAN_2 } from 'common/text/home';
 
 const Home: NextPage = () => {
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
           <meta data-rh="true" name="og:country-name" content="USA" />
 
           <meta data-rh="true" property="og:url" content={location?.hostname} />
-          <meta data-rh="true" property="og:image" content={`${image.src}`} />
+          <meta property="og:image" content={`${image.src}`} />
           <meta property="og:site_name" content="Hermesolutions LLC" />
         </>
       }
