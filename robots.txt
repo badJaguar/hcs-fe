@@ -1,4 +1,0 @@
-User-Agent: *
-Allow: /
-
-Sitemap: https://hcs-fe.vercel.app/sitemap.xml

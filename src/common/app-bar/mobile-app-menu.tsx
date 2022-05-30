@@ -12,7 +12,7 @@ import Container from '@mui/material/Container';
 
 import Link from 'common/NextLink';
 
-import logo from '../../../assets/logo.svg';
+import logo from '../../../assets/logo.png';
 import { PAGES_WEB } from './utils/constants';
 
 const MobileAppMenu = () => {
@@ -82,11 +82,8 @@ const MobileAppMenu = () => {
         <Image
           src={logo}
           alt="Hermes Corporate Solutions Logo"
-          layout="fixed"
-          width={'210px'}
-          height={'65px'}
+          layout="intrinsic"
           quality={100}
-
         />
       </Container>
     </Box>
