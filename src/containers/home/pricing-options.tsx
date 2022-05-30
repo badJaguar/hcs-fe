@@ -1,13 +1,19 @@
-import { Grid, Paper, Typography } from "@mui/material";
+import { Button, Divider, Grid, Typography } from "@mui/material";
 
-import { TAB_TEXT, WHAT_WE } from "common/text/pricing-options";
+import { BUTTON_TEXT, TAB_TEXT, WHAT_WE } from "common/text/pricing-options";
 import { useScreenDown } from "common/hooks/screenSize";
 
-import BulbIcon from "../../../assets/icons/bulb-icon";
-import HandshakeIcon from "../../../assets/icons/handshake-icon";
-import StatisticsDocIcon from "../../../assets/icons/statistics-doc-icon";
+import TickIcon from "../../../assets/icons/tick-icon";
 
-import { CulumnsStyledSectionStyled, WhatWeCanStyled } from "./styled";
+import {
+  BluePricingPaperStyled,
+  BulletPointContainerStyled,
+  BulletPointStyled,
+  CardsContainerStyled,
+  CulumnsStyledSectionStyled,
+  WhatWeCanStyled,
+  WhitePricingPaperStyled
+} from "./styled";
 
 const PricingOptions = () => {
   const isDownMd = useScreenDown("md");
@@ -24,25 +30,61 @@ const PricingOptions = () => {
           </Typography>
           <Typography component="article" variant="body1" sx={{ mb: 4 }}>{WHAT_WE.CONTENT_1}</Typography>
         </Grid>
-        <Grid container flexDirection="row" gap={10} justifyContent="center" width="100%" zIndex={1}>
-          <Paper sx={{ p: 6, maxWidth: 270, boxShadow: '0px 6px 24px rgba(107, 119, 131, 0.14)' }}>
-            <BulbIcon sx={{ height: 56, width: 56 }} />
-            <Typography sx={{ py: 3 }} variant="h5">Lorem Ipsum</Typography>
-            <Typography variant="body1">{TAB_TEXT}</Typography>
-          </Paper>
-          <Paper sx={{ p: 6, maxWidth: 270, boxShadow: '0px 6px 24px rgba(107, 119, 131, 0.14)' }}>
-            <HandshakeIcon sx={{ height: 56, width: 56 }} />
-            <Typography sx={{ py: 3 }} variant="h5">Lorem Ipsum</Typography>
-            <Typography variant="body1">{TAB_TEXT}</Typography>
-          </Paper>
-          <Paper sx={{ p: 6, maxWidth: 270, boxShadow: '0px 6px 24px rgba(107, 119, 131, 0.14)' }}>
-            <StatisticsDocIcon sx={{ height: 56, width: 56 }} />
-            <Typography sx={{ py: 3 }} variant="h5">Lorem Ipsum</Typography>
-            <Typography variant="body1">{TAB_TEXT}</Typography>
-          </Paper>
-        </Grid>
+        <CardsContainerStyled container>
+
+          <WhitePricingPaperStyled>
+            <Typography sx={{ py: 3 }} variant="h5" color="text.mediumGray">{TAB_TEXT[0].TITLE}</Typography>
+            <Typography variant="h3"><sup><small>$</small></sup>{TAB_TEXT[0].PRICE}</Typography>
+            <Divider sx={{ my: 12.5 }} />
+            <BulletPointContainerStyled>
+              {
+                TAB_TEXT[0].BULLET_POINTS.map((point) => (
+                  <BulletPointStyled key={point} variant="subtitle1">
+                    <TickIcon fontSize="large" color="primary" />&nbsp;
+                    {point}
+                  </BulletPointStyled>
+                ))
+              }
+            </BulletPointContainerStyled>
+            <Button variant="contained" fullWidth sx={{ my: 12.5, mt: 29 }}>{BUTTON_TEXT}</Button>
+          </WhitePricingPaperStyled>
+
+          <BluePricingPaperStyled>
+            <Typography color="secondary.light" sx={{ py: 3 }} variant="h5">{TAB_TEXT[1].TITLE}</Typography>
+            <Typography color="secondary" variant="h3"><sup><small>$</small></sup>{TAB_TEXT[1].PRICE}</Typography>
+            <Divider sx={{ my: 12.5, borderColor: 'white' }} />
+            <BulletPointContainerStyled>
+              {
+                TAB_TEXT[1].BULLET_POINTS.map((point) => (
+                  <BulletPointStyled key={point} variant="subtitle1" color="secondary">
+                    <TickIcon fontSize="large" color="secondary" />&nbsp;
+                    {point}
+                  </BulletPointStyled>
+                ))
+              }
+            </BulletPointContainerStyled>
+            <Button variant="contained" fullWidth sx={{ my: 12.5, mt: 40 }}>{BUTTON_TEXT}</Button>
+          </BluePricingPaperStyled>
+
+          <WhitePricingPaperStyled>
+            <Typography sx={{ py: 3 }} variant="h5" color="text.mediumGray">{TAB_TEXT[2].TITLE}</Typography>
+            <Typography variant="h3"><sup><small>$</small></sup>{TAB_TEXT[2].PRICE}</Typography>
+            <Divider sx={{ my: 12.5 }} />
+            <BulletPointContainerStyled>
+              {
+                TAB_TEXT[2].BULLET_POINTS.map((point) => (
+                  <BulletPointStyled textAlign="left" key={point} variant="subtitle1">
+                    <TickIcon fontSize="large" color="primary" />&nbsp;
+                    {point}
+                  </BulletPointStyled>
+                ))
+              }
+            </BulletPointContainerStyled>
+            <Button variant="contained" fullWidth sx={{ my: 12.5 }}>{BUTTON_TEXT}</Button>
+          </WhitePricingPaperStyled>
+        </CardsContainerStyled>
       </WhatWeCanStyled>
-    </CulumnsStyledSectionStyled>
+    </CulumnsStyledSectionStyled >
   );
 };
 

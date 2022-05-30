@@ -3,4 +3,22 @@ export const WHAT_WE = {
   CONTENT_1: 'Please check out the packages and services they include',
 };
 
-export const TAB_TEXT = 'Of the printing and typesetting industry. Lorem Ipsum has been the industry' as const;
+export const TAB_TEXT = [
+  {
+    TITLE: 'STARTER',
+    PRICE: '249',
+    BULLET_POINTS: ['Amazon Alexa', 'Samsung Bixby', 'Apple Siri', 'Microsoft Cortana', 'Google Assistant'],
+  },
+  {
+    TITLE: 'PRO',
+    PRICE: '1399',
+    BULLET_POINTS: ['Voice Activation', 'Google Landing Page', 'Apple Siri', 'SEO and Website Analysis'],
+  },
+  {
+    TITLE: 'ADVANCED',
+    PRICE: '1999',
+    BULLET_POINTS: ['Voice Activation', 'Google Landing Page', 'Apple Siri', 'SEO and Website Analysis', 'Google Maps Optimization', 'Making up a plan for future SEO and digital advertising'],
+  }
+];
+
+export const BUTTON_TEXT = "Get Started" as const;

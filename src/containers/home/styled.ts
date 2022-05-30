@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, Paper, Typography } from "@mui/material";
 
 import imageBg from "../../../assets/what-we-can-col.svg";
 import defaultTheme from "../../../styles/theme/defaultTheme";
@@ -99,5 +99,71 @@ export const WhoWeAreTitle = styled(Typography)(({ theme }) => ({
     borderLeft: `3px solid ${theme.palette.background.golden}`,
     marginLeft: theme.spacing(-5),
     paddingRight: theme.spacing(4),
+  }
+}));
+
+export const CardsContainerStyled = styled(Grid)(({ theme }) => ({
+  flexDirection: "row",
+  gap: theme.spacing(10),
+  justifyContent: "center",
+  width: "100%",
+  zIndex: 1,
+  position: "relative",
+}));
+
+export const WhitePricingPaperStyled = styled(Paper)(({ theme }) => ({
+  padding: theme.spacing(6),
+  width: 370,
+  boxShadow: '0px 6px 24px rgba(107, 119, 131, 0.14)',
+
+  [defaultTheme.breakpoints.down("xl")]: {
+    padding: theme.spacing(4),
+  }
+}));
+
+export const BluePricingPaperStyled = styled(WhitePricingPaperStyled)(({ theme }) => ({
+  paddingTop: theme.spacing(12),
+  margin: theme.spacing(-6, 0),
+  backgroundColor: theme.palette.background.blue,
+
+  '&::before': {
+    content: '"BEST"',
+    position: "absolute",
+    backgroundColor: theme.palette.background.golden,
+    top: -25,
+    marginLeft: theme.spacing(30),
+    marginRight: 'auto',
+    width: 80,
+    height: 40,
+    borderRadius: '0px 0px 6px 6px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontWeight: 600,
+    color: theme.palette.secondary.light,
+    letterSpacing: 1.5
+  },
+
+  [defaultTheme.breakpoints.down("xl")]: {
+    paddingTop: theme.spacing(10),
+    '&::before': {
+      marginLeft: theme.spacing(32),
+    },
+  }
+}));
+
+export const BulletPointContainerStyled = styled(Box)({
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'flex-start',
+});
+
+export const BulletPointStyled = styled(Typography)(({ theme }) => ({
+  marginBottom: theme.spacing(4),
+  display: 'flex',
+  lineHeight: '1.5',
+
+  [defaultTheme.breakpoints.down("xl")]: {
+    marginBottom: theme.spacing(3),
   }
 }));
