@@ -5,18 +5,18 @@ export const WHY_ARE_DOING = {
 
 export const WHY_ARE_DOING_BLOCQUOTES = [
   {
-    TITLE: 'Top-notch',
-    CONTENT: 'quality work',
+    TITLE: 'Result oriented',
+    CONTENT: 'Top-notch quality work',
   },
   {
-    TITLE: 'Attracting',
-    CONTENT: 'exceptional professionals in their field to accumulate technological expertise',
+    TITLE: 'Professionalism',
+    CONTENT: 'Attracting exceptional professionals in their field to accumulate technological expertise',
   },
   {
-    TITLE: 'Application of',
-    CONTENT: 'different tools individually for each customer',
+    TITLE: 'Diversity',
+    CONTENT: 'Application of different tools individually for each customer',
   },
   {
-    TITLE: 'Focus on',
-    CONTENT: 'building reliable and long-term relationships with customers',
+    TITLE: 'Consistency',
+    CONTENT: 'Focus on building reliable and long-term relationships with customers',
   }] as const;
