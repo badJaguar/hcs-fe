@@ -4,6 +4,7 @@ import { Button, Divider, Grid, Typography } from "@mui/material";
 
 import { BUTTON_TEXT, TAB_TEXT, WHAT_WE } from "common/text/pricing-options";
 import { useScreenDown } from "common/hooks/screenSize";
+import { BulletPointStyled } from "common/mui-components/BulletPointStyled";
 
 import TickIcon from "../../../assets/icons/tick-icon";
 
@@ -11,7 +12,6 @@ import {
   BestLabelStyled,
   BluePricingPaperStyled,
   BulletPointContainerStyled,
-  BulletPointStyled,
   CardsContainerStyled,
   CulumnsStyledSectionStyled,
   WhatWeCanStyled,

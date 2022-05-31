@@ -53,7 +53,8 @@ const ContactForm = () => {
   return (
     <Grid
       item
-      xs={5}
+      md={5}
+      xs={12}
       component="form"
       onSubmit={formValues.handleSubmit(handleSaveProject)}
       sx={{ width: '100%', pt: { xxs: 8, xs: 0 } }}

@@ -1,13 +1,13 @@
 import type { NextPage } from 'next';
 
+import { Digital as DigitalComponent } from '../src/containers/digital';
+
 import Base from './_base';
 
 const Digital: NextPage = () => {
   return (
     <Base headTitle="Hermes Corporate Solutions | SEO & Digital Advertising">
-      <h1>
-        Welcome to SEO & Digital Advertising
-      </h1>
+      <DigitalComponent />
     </Base>
   );
 };

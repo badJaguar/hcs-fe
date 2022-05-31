@@ -16,11 +16,6 @@ export const GreetingsStyled = styled(Box, { label: 'GreetingsStyled' })({
   flexDirection: 'column',
   alignItems: 'center',
   textAlign: 'center',
-  // height: '256px',
-
-  [defaultTheme.breakpoints.down("md")]: {
-    // height: '90px',
-  }
 });
 
 export const RecommendationsContainerStyled = styled(Grid)({
@@ -136,16 +131,6 @@ export const BulletPointContainerStyled = styled(Box)({
   flexDirection: 'column',
   justifyContent: 'flex-start',
 });
-
-export const BulletPointStyled = styled(Typography)(({ theme }) => ({
-  marginBottom: theme.spacing(4),
-  display: 'flex',
-  lineHeight: '1.5',
-
-  [defaultTheme.breakpoints.down("xl")]: {
-    marginBottom: theme.spacing(3),
-  }
-}));
 
 export const BestLabelStyled = styled('div')(({ theme }) => ({
   content: '"BEST"',

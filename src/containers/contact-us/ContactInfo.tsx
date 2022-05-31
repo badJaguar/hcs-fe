@@ -13,7 +13,7 @@ const ContactInfo = () => {
   const isDownMd = useScreenDown("md");
 
   return (
-    <Grid item xs={5}>
+    <Grid item xs={5} sx={{ mb: 6 }}>
       <Typography variant={isDownMd ? "h4" : "h3"}>
         {CONTACT_TITLE}
       </Typography>

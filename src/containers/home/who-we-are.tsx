@@ -13,7 +13,7 @@ const WhoWeAre = () => {
 
   return (
     <WithoutColumnsSectionStyled component="section">
-      <Grid container maxWidth="lg" gap={5}>
+      <Grid container maxWidth="lg" gap={5} justifyContent="center" alignItems="center">
         <Grid item xs={6} >
           <Typography
             variant={isDownMd ? "h4" : "h3"}
@@ -21,10 +21,12 @@ const WhoWeAre = () => {
           >
             {WHO_WE.TITLE}
           </Typography>
-          <Typography component="article" variant="body1" sx={{ mb: 4 }}>{WHO_WE.CONTENT_1}</Typography>
-          <Typography component="article" variant="body1">{WHO_WE.CONTENT_2}</Typography>
+          <Grid item md={10} xs={12}>
+            <Typography component="article" variant="body1" sx={{ mb: 4 }}>{WHO_WE.CONTENT_1}</Typography>
+            <Typography component="article" variant="body1">{WHO_WE.CONTENT_2}</Typography>
+          </Grid>
         </Grid>
-        <ImageGridContainerStyled item xs={5} >
+        <ImageGridContainerStyled item md={5}>
           <Image src={image} alt="Our team" />
         </ImageGridContainerStyled>
       </Grid>
