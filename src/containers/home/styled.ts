@@ -110,20 +110,12 @@ export const WhitePricingPaperStyled = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(6),
   width: 370,
   boxShadow: '0px 6px 24px rgba(107, 119, 131, 0.14)',
-
-  [defaultTheme.breakpoints.down("xl")]: {
-    padding: theme.spacing(4),
-  }
 }));
 
 export const BluePricingPaperStyled = styled(WhitePricingPaperStyled)(({ theme }) => ({
   paddingTop: theme.spacing(12),
   margin: theme.spacing(-6, 0),
   backgroundColor: theme.palette.background.blue,
-
-  [defaultTheme.breakpoints.down("xl")]: {
-    paddingTop: theme.spacing(10),
-  }
 }));
 
 export const BulletPointContainerStyled = styled(Box)({
