@@ -19,7 +19,8 @@ const WhyAreWeDoingThis = () => {
           >
             {WHY_ARE_DOING.TITLE}
           </Typography>
-          <Typography component="article" variant="subtitle1" sx={{ mb: 4, lineHeight: 1.5 }}>{WHY_ARE_DOING.CONTENT}</Typography>
+          <Typography component="article" variant="subtitle1" sx={{ mb: 4, lineHeight: 1.5 }}>{WHY_ARE_DOING.CONTENT_1}</Typography>
+          <Typography component="article" variant="subtitle1" sx={{ mb: 4, lineHeight: 1.5 }}>{WHY_ARE_DOING.CONTENT_2}</Typography>
         </Grid>
         <Paper elevation={15} sx={{ p: 6, zIndex: 1 }}>
           <Grid container wrap="nowrap" direction="row" gap={10} justifyContent="center" zIndex={1}>

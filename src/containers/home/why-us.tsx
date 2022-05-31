@@ -25,12 +25,13 @@ const WhyUs = () => {
             {WHY_US.TITLE}
           </Typography>
           <article>
-            <Typography component="span" variant="body1" sx={{ mb: 4 }}>{WHY_US.CONTENT_1}</Typography>
-            <Typography component="span" variant="body1" fontWeight="bold">{WHY_US.BOLDED}</Typography>
-            <Typography component="span" variant="body1">{WHY_US.CONTENT_2}</Typography>
+            <Typography component="p" variant="body1" sx={{ mb: 4 }}>{WHY_US.CONTENT_1}</Typography>
+            <Typography component="span" variant="body1">
+              <b>{WHY_US.BOLDED}</b>
+              {WHY_US.CONTENT_2}</Typography>
           </article>
           <article>
-            <Typography component="span" variant="body1">{WHY_US.CONTENT_3}</Typography>
+            <Typography component="p" variant="body1" sx={{ pt: 4 }}>{WHY_US.CONTENT_3}</Typography>
           </article>
         </Grid>
       </Grid>

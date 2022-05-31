@@ -45,10 +45,14 @@ const PricingOptions = () => {
             <Typography variant="h3"><sup><small>$</small></sup>{TAB_TEXT[0].PRICE}</Typography>
             <Divider sx={{ my: 12.5 }} />
             <BulletPointContainerStyled>
+              <BulletPointStyled variant="subtitle1">
+                <TickIcon fontSize="large" color="primary" sx={{ mr: 2 }} />
+                {TAB_TEXT[0].BULLET_POINT}
+              </BulletPointStyled>
               {
                 TAB_TEXT[0].BULLET_POINTS.map((point) => (
                   <BulletPointStyled key={point} variant="subtitle1">
-                    <TickIcon fontSize="large" color="primary" />&nbsp;
+                    <span style={{ marginLeft: 24 }} />&#8212;&nbsp;
                     {point}
                   </BulletPointStyled>
                 ))
@@ -58,7 +62,7 @@ const PricingOptions = () => {
               variant="contained"
               onClick={handleClick}
               fullWidth
-              sx={{ my: 12.5, mt: 29 }}
+              sx={{ my: 12.5, mt: 16 }}
             >{BUTTON_TEXT}</Button>
           </WhitePricingPaperStyled>
 
@@ -73,7 +77,7 @@ const PricingOptions = () => {
               {
                 TAB_TEXT[1].BULLET_POINTS.map((point) => (
                   <BulletPointStyled key={point} variant="subtitle1" color="secondary">
-                    <TickIcon fontSize="large" color="secondary" />&nbsp;
+                    <TickIcon fontSize="large" color="secondary" sx={{ mr: 2 }} />
                     {point}
                   </BulletPointStyled>
                 ))
@@ -83,7 +87,7 @@ const PricingOptions = () => {
               variant="contained"
               onClick={handleClick}
               fullWidth
-              sx={{ my: 12.5, mt: 40 }}
+              sx={{ my: 12.5, mt: 50 }}
             >{BUTTON_TEXT}</Button>
           </BluePricingPaperStyled>
 
@@ -95,7 +99,7 @@ const PricingOptions = () => {
               {
                 TAB_TEXT[2].BULLET_POINTS.map((point) => (
                   <BulletPointStyled textAlign="left" key={point} variant="subtitle1">
-                    <TickIcon fontSize="large" color="primary" />&nbsp;
+                    <TickIcon fontSize="large" color="primary" sx={{ mr: 2 }} />
                     {point}
                   </BulletPointStyled>
                 ))

@@ -146,5 +146,9 @@ export const BestLabelStyled = styled('div')(({ theme }) => ({
   justifyContent: 'center',
   fontWeight: 600,
   color: theme.palette.secondary.light,
-  letterSpacing: 1.5
+  letterSpacing: 1.5,
+
+  [defaultTheme.breakpoints.up("xl")]: {
+    marginTop: theme.spacing(-12),
+  }
 }));
