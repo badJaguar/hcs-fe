@@ -27,7 +27,7 @@ const ContactUs: NextPage = () => {
           <meta data-rh="true" property="og:type" content="article" />
           <meta data-rh="true" property="og:url" content={location?.href} />
           <meta data-rh="true" property="og:image" content={`${image.src}`} />
-          {/* <meta property="og:site_name" content="IMDb" /> */}
+          <meta property="og:site_name" content="Hermesolutions LLC" />
         </>
       }
     >
