@@ -3,7 +3,7 @@ const PrivacyPolicy = () => {
   return (
     <div>
       <iframe
-        src="https://docs.google.com/document/d/e/2PACX-1vQPEQb7iQKpxPHB4Az8MrusWpdhCwh7sgtsMfPuN8GKxGxYWm3gGl7KRcxVdf0fAVGP2Fu8eJVHNU1q/pub?embedded=true"
+        src="https://docs.google.com/document/d/e/2PACX-1vQ3QIyu3t8wRPpKhusofIIzoeC0Xpc07b3cwYx9If23jx9JFAKSrQuqHUddOTvX19GQQG9ymTbG2BJF/pub?embedded=true"
         style={{ width: "800px", height: "50vh" }}
       ></iframe>
     </div>

@@ -2,7 +2,7 @@ const TermsOfService = () => {
 
   return (
     <iframe
-      src="https://docs.google.com/document/d/e/2PACX-1vRsph8tijOXYUyPKid1bN6WegEczX6KECeeLfptEI8IFcESiNiZycoFuQkH2j4dDX2IseB7Et27Ofn4/pub?embedded=true"
+      src="https://docs.google.com/document/d/e/2PACX-1vQBX8t4qmhO-6kwAFMVXo1npD7aRrA9uvdfMxMWK96jkC-FFtY-AQhXvC7zOkBSncNZg43H90v12TlE/pub?embedded=true"
       style={{ width: "800px", height: "50vh" }}
     ></iframe>
   );
