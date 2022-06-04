@@ -6,7 +6,7 @@ import { useScreenDown } from "common/hooks/screenSize";
 
 import image from "/assets/why-us.png";
 
-import { ImageGridContainerStyled, WithoutColumnsSectionStyled } from "./styled";
+import { ImageGridContainerStyled, WithoutColumnsSectionStyled } from "utils/styled";
 
 const WhyUs = () => {
   const isDownMd = useScreenDown("md");

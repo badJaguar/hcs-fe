@@ -3,8 +3,9 @@ import { Grid, Paper, Typography } from "@mui/material";
 import { useScreenDown } from "common/hooks/screenSize";
 
 import { WHY_ARE_DOING, WHY_ARE_DOING_BLOCQUOTES } from "common/text/why-are-doing";
+import { CulumnsStyledSectionStyled, WhatWeCanStyled } from "utils/styled";
 
-import { CulumnsStyledSectionStyled, WhatWeCanStyled, WhoWeAreTitle } from "./styled";
+import { WhoWeAreTitle } from "./styled";
 
 const WhyAreWeDoingThis = () => {
   const isDownMd = useScreenDown("md");

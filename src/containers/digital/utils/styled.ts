@@ -2,24 +2,7 @@ import styled from "@emotion/styled";
 import { Box, Grid, Paper, Typography } from "@mui/material";
 import defaultTheme from "../../../../styles/theme/defaultTheme";
 
-import seoBgImage from "/assets/seo-bg.png";
 import seoGiveImage from "/assets/seo-give-bg.png";
-
-export const MainBannerStyled = styled(Grid)(({ theme }) => ({
-  width: "100%",
-  minHeight: "calc(100vh - 60px)",
-  backgroundImage: `url(${seoBgImage.src})`,
-  layout: "fill",
-  objectFit: "cover",
-  objectPosition: "left center",
-  justifyContent: "center",
-  alignItems: "center",
-  padding: theme.spacing(0, 4),
-
-  [defaultTheme.breakpoints.down("md")]: {
-    padding: theme.spacing(4, 4),
-  }
-}));
 
 export const BlockquoteContainerStyled = styled(Box)(({ theme }) => ({
   display: 'flex',

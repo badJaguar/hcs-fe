@@ -6,7 +6,7 @@ import { useScreenDown } from "common/hooks/screenSize";
 
 import image from "/assets/team.png";
 
-import { ImageGridContainerStyled, WithoutColumnsSectionStyled } from "./styled";
+import { ImageGridContainerStyled, WithoutColumnsSectionStyled } from "utils/styled";
 
 const WhoWeAre = () => {
   const isDownMd = useScreenDown("md");

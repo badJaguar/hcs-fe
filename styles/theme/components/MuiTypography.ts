@@ -42,7 +42,7 @@ export default {
         fontSize: "3.0rem"
       },
       [defaultTheme.breakpoints.down("xs")]: {
-        fontSize: "2.0rem"
+        fontSize: "2.6rem"
       }
     },
     h4: {

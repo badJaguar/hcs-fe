@@ -13,10 +13,9 @@ import {
   BluePricingPaperStyled,
   BulletPointContainerStyled,
   CardsContainerStyled,
-  CulumnsStyledSectionStyled,
-  WhatWeCanStyled,
   WhitePricingPaperStyled
-} from "./styled";
+} from "./utils/styled";
+import { CulumnsStyledSectionStyled, WhatWeCanStyled } from "utils/styled";
 
 const PricingOptions = () => {
   const isDownMd = useScreenDown("md");
@@ -27,7 +26,7 @@ const PricingOptions = () => {
   };
 
   return (
-    <CulumnsStyledSectionStyled component="section">
+    <CulumnsStyledSectionStyled component="section" sx={{ py: 4 }}>
       <WhatWeCanStyled container maxWidth="lg" sx={{ px: { xxs: 2, md: 4 } }}>
         <Grid item xs={6} sx={{ pb: { xxs: 4, md: 15 } }}>
           <Typography

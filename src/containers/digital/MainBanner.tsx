@@ -2,10 +2,11 @@ import { Grid, Typography } from "@mui/material";
 import { BulletPointStyled } from "common/mui-components/BulletPointStyled";
 
 import PaperBlured from "common/mui-components/paper-blured";
+import { MainBannerStyled } from "utils/styled";
+
 import TickBodylessIcon from "../../../assets/icons/tick-bodyless-icon";
 
 import { MAIN_BANNER, PAPER } from "./utils/constants";
-import { MainBannerStyled } from "./utils/styled";
 
 const MainBanner = (
   <MainBannerStyled item container gap={20}>

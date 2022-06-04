@@ -9,10 +9,10 @@ export const PAGES_WEB = [
     label: 'SEO & Digital',
     value: '/digital',
   },
-  // {
-  //   label: 'Services & Packages',
-  //   value: '/sevices',
-  // },
+  {
+    label: 'Services & Packages',
+    value: '/services',
+  },
   {
     label: 'Contact Us',
     value: '/contact-us',

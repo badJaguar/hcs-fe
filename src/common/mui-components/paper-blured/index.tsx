@@ -1,10 +1,11 @@
+import { PaperProps } from "@mui/material";
 import { memo } from "react";
 
 import { PaperStyled } from "./styled";
 
-const PaperBlured = ({ children }: { children: React.ReactNode; }) => {
+const PaperBlured = ({ children, props }: { children: React.ReactNode; props?: PaperProps; }) => {
   return (
-    <PaperStyled>
+    <PaperStyled {...props}>
       {children}
     </PaperStyled>
   );
