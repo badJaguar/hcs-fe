@@ -26,6 +26,14 @@ const Base: NextPage<BaseProps> = ({ headTitle, children, headElements }: BasePr
         <link data-rh="true" rel="mask-icon" href="/fav/safari-pinned-tab.svg" color="#5bbad5" />
         <meta data-rh="true" name="msapplication-TileColor" content="#da532c" />
         <meta data-rh="true" name="theme-color" content="#ffffff" />
+
+        <meta data-rh="true" name="og:latitude" content="26.202160" />
+        <meta data-rh="true" name="og:longitude" content="-80.163660" />
+        <meta data-rh="true" name="og:street-address" content="1500 W Cypress Creek Rd #201" />
+        <meta data-rh="true" name="og:locality" content="Fort Lauderdale" />
+        <meta data-rh="true" name="og:region" content="FL" />
+        <meta data-rh="true" name="og:postal-code" content="33309" />
+        <meta data-rh="true" name="og:country-name" content="USA" />
         {headElements}
       </Head>
       <MainStyled>
