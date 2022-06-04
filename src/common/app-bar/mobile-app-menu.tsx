@@ -78,7 +78,7 @@ const MobileAppMenu = () => {
       >
         <Image
           src={logo}
-          alt="Hermes Corporate Solutions Logo"
+          alt="Hermes Network Solutions Logo"
           layout="intrinsic"
           quality={100}
           height={'70px'}

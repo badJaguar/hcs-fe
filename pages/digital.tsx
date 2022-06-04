@@ -13,7 +13,7 @@ const Digital: NextPage = () => {
 
   return (
     <Base
-      headTitle="Hermes Corporate Solutions | SEO & Digital Advertising"
+      headTitle="Hermes Network Solutions | SEO & Digital Advertising"
       headElements={
         <>
           <meta data-rh="true" name="title" content="Digital Advertising" />

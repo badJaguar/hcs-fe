@@ -13,16 +13,16 @@ const ContactUs: NextPage = () => {
 
   return (
     <Base
-      headTitle="Hermes Corporate Solutions | Contact Us"
+      headTitle="Hermes Network Solutions | Contact Us"
       headElements={
         <>
-          <meta data-rh="true" name="title" content="Contact with Hermes Corporate Solutions" />
+          <meta data-rh="true" name="title" content="Contact with Hermes Network Solutions" />
           <meta data-rh="true" name="keywords" content="Keyword1, Keyword2, Keyword3" />
-          <meta data-rh="true" name="description" content={"Contact with Hermes Corporate Solutions"} />
+          <meta data-rh="true" name="description" content={"Contact with Hermes Network Solutions"} />
           <link data-rh="true" rel="canonical" href={location?.href} />
 
-          <meta data-rh="true" property="og:title" content="Hermes Corporate Solutions | Contact Us" />
-          <meta data-rh="true" property="og:description" content={'Contact with Hermes Corporate Solutions'} />
+          <meta data-rh="true" property="og:title" content="Hermes Network Solutions | Contact Us" />
+          <meta data-rh="true" property="og:description" content={'Contact with Hermes Network Solutions'} />
           <meta data-rh="true" property="og:locale" content="en_US" />
           <meta data-rh="true" property="og:type" content="article" />
           <meta data-rh="true" property="og:url" content={location?.href} />

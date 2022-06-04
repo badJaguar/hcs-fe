@@ -15,7 +15,7 @@ const Home: NextPage = () => {
 
   return (
     <Base
-      headTitle="Hermes Corporate Solutions | Home"
+      headTitle="Hermes Network Solutions | Home"
       headElements={
         <>
           <meta data-rh="true" name="title" content={`${SLOGAN_1} ${SLOGAN_3}`} />
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
           <meta data-rh="true" name="description" content={`${WHO_WE.CONTENT_1} ${WHO_WE.CONTENT_2}`} />
           <link data-rh="true" rel="canonical" href={location?.href} />
 
-          <meta data-rh="true" property="og:title" content="Hermes Corporate Solutions | Home" />
+          <meta data-rh="true" property="og:title" content="Hermes Network Solutions | Home" />
           <meta data-rh="true" property="og:description" content={`${WHO_WE.CONTENT_1} ${WHO_WE.CONTENT_2}`} />
           <meta data-rh="true" property="og:locale" content="en_US" />
           <meta data-rh="true" property="og:type" content="article" />

@@ -35,7 +35,7 @@ const Footer = () => {
         <Grid container justifyContent="space-between">
           <Grid item sx={{ mt: 1.5, width: { xxs: '50%' } }}>
             <Typography variant="body2" lineHeight="1.2">
-              ©Hermes Corporate Solutions {currentYear}. All rights reserved.
+              ©Hermes Network Solutions {currentYear}. All rights reserved.
             </Typography>
           </Grid>
           <Grid item

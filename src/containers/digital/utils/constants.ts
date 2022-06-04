@@ -7,7 +7,7 @@ export const MAIN_BANNER = {
 
 export const PAPER = {
   TITLE: 'And now the list of tools that can be used:',
-  BULLET_POINTS: ['Mobile Ads;', 'Social Ads;', 'Desktop Ads;', 'Dynamic Retargeting;', 'Search Ads;', 'Audio;', 'Vudio;']
+  BULLET_POINTS: ['Mobile Ads;', 'Social Ads;', 'Desktop Ads;', 'Dynamic Retargeting;', 'Search Ads;', 'Audio;', 'Video;']
 } as const;
 
 export const BLOCKQUOTE = {

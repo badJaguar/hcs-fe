@@ -114,7 +114,7 @@ const PricingOptions = () => {
           </WhitePricingPaperStyled>
         </CardsContainerStyled>
       </WhatWeCanStyled>
-    </CulumnsStyledSectionStyled >
+    </CulumnsStyledSectionStyled>
   );
 };
 

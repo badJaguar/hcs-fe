@@ -49,34 +49,47 @@ export const ImageGridContainerStyled = styled(Grid)(({ theme }) => ({
   }
 }));
 
-export const CulumnsStyledSectionStyled = styled(Box, { label: 'WhatWeCanContainerStyled' })(({ theme }) => ({
-  width: '100%',
-  position: 'relative',
-  display: 'flex',
-  justifyContent: 'center',
-  paddingBottom: theme.spacing(6),
-  minHeight: 660,
-  '&::before': {
-    content: '""',
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    height: '100%',
-    width: imageBg.width,
-    backgroundImage: `url(${imageBg.src})`,
-    WebkitBackgroundSize: '100%',
-  },
-  '&::after': {
-    content: '""',
-    position: 'absolute',
-    top: 0,
-    right: 0,
-    height: '100%',
-    width: imageBg.width,
-    backgroundImage: `url(${imageBg.src})`,
-    WebkitBackgroundSize: '100%',
-  }
-}));
+export const CulumnsStyledSectionStyled = styled(Box, { label: 'WhatWeCanContainerStyled' })(
+  ({ theme }) => ({
+    width: '100%',
+    position: 'relative',
+    display: 'flex',
+    justifyContent: 'center',
+    paddingBottom: theme.spacing(6),
+    minHeight: 660,
+    '&::before': {
+      content: '""',
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      height: '100%',
+      width: '100%',
+      backgroundImage: `url(${imageBg.src})`,
+      backgroundSize: 'contain',
+      backgroundRepeat: 'no-repeat',
+    },
+    '&::after': {
+      content: '""',
+      position: 'absolute',
+      top: 0,
+      right: 0,
+      height: '100%',
+      width: '100%',
+      backgroundImage: `url(${imageBg.src})`,
+      backgroundSize: 'contain',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'top right',
+    },
+
+    [defaultTheme.breakpoints.down("md")]: {
+      '&::before': {
+        display: 'none',
+      },
+      '&::after': {
+        display: 'none',
+      }
+    }
+  }));
 
 export const WhatWeCanStyled = styled(Grid, { label: 'WhatWeCanStyled' })({
   height: '100%',
@@ -141,6 +154,15 @@ export const BestLabelStyled = styled('div')(({ theme }) => ({
   letterSpacing: 1.5,
 
   [defaultTheme.breakpoints.up("xl")]: {
+    marginTop: theme.spacing(-12),
+  },
+  [defaultTheme.breakpoints.up("md")]: {
+    marginTop: theme.spacing(-12),
+  },
+  [defaultTheme.breakpoints.up("xs")]: {
+    marginTop: theme.spacing(-12),
+  },
+  [defaultTheme.breakpoints.down("xs")]: {
     marginTop: theme.spacing(-12),
   }
 }));
