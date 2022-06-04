@@ -1,7 +1,9 @@
 import React from "react";
 import { useRouter } from "next/router";
 
-import { Grid, Paper, Snackbar } from "@mui/material";
+import { Grid, Snackbar } from "@mui/material";
+
+import PaperBlured from "common/mui-components/paper-blured";
 
 import ContactForm from "./ContactForm";
 import ContactInfo from "./ContactInfo";
@@ -35,8 +37,7 @@ export const ContactUs = () => {
     <ContactUsWrapperStyled>
       <ContactUsContainerStyled maxWidth="lg">
         <BlueBgInsertStyled />
-        <Paper
-          elevation={15}
+        <PaperBlured
           sx={{
             position: 'relative',
             maxWidth: 'lg',
@@ -54,7 +55,7 @@ export const ContactUs = () => {
             <ContactInfo />
             <ContactForm />
           </Grid>
-        </Paper>
+        </PaperBlured>
       </ContactUsContainerStyled>
       <Snackbar
         open={open}
