@@ -16,12 +16,12 @@ const Services: NextPage = () => {
       headTitle="Hermes Network Solutions | Services & Packages"
       headElements={
         <>
-          <meta data-rh="true" name="title" content="Services & Packages" />
+          <meta data-rh="true" name="title" content="Hermes Network Solutions | Services & Packages" />
           <meta data-rh="true" name="keywords" content="Keyword1, Keyword2, Keyword3" />
           <meta data-rh="true" name="description" content={MAIN_BANNER.SUBTITLE} />
           <link data-rh="true" rel="canonical" href={location?.href} />
 
-          <meta data-rh="true" property="og:title" content="Services & Packages" />
+          <meta data-rh="true" property="og:title" content="Hermes Network Solutions | Services & Packages" />
           <meta data-rh="true" property="og:description" content={MAIN_BANNER.SUBTITLE} />
           <meta data-rh="true" property="og:locale" content="en_US" />
           <meta data-rh="true" property="og:type" content="article" />
