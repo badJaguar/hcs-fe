@@ -33,6 +33,22 @@ const Seo = (
           </Container>
         </Grid>
       </Grid>
+      <Grid item maxWidth="lg" sx={{ textAlign: 'center' }}>
+        <Typography variant="h5" sx={{ pb: { xxs: 4, md: 8 } }}>
+          {SEO.CONTENT_3.TITLE}
+          <Typography
+            maxWidth="md"
+            component="article"
+            variant="body1"
+            sx={{ mt: 4, textAlign: 'start' }}
+            dangerouslySetInnerHTML={{
+              __html: SEO.CONTENT_3.CONTENT
+                .replace('{{<bold>}}', '<b>')
+                .replace('{{<bold/>}}', '</b>')
+            }}
+          />
+        </Typography>
+      </Grid>
     </Grid>
   </SeoContainerStyled>
 );
