@@ -7,12 +7,13 @@ export const MAIN_BANNER = {
 
 export const PAPER = {
   TITLE: 'And now the list of tools that can be used:',
-  BULLET_POINTS: ['Mobile Ads;', 'Social Ads;', 'Desktop Ads;', 'Dynamic Retargeting;', 'Search Ads;', 'Audio;', 'Video;']
+  BULLET_POINTS: ['Mobile Ads', 'Social Ads', 'Desktop Ads', 'Dynamic Retargeting', 'Search Ads', 'Audio', 'Video']
 } as const;
 
 export const BLOCKQUOTE = {
   TEXT_1: 'Also, for any business can be useful and important such factors and features of the platform as Cross-platform, Brand Safety, Fraud Protection, Creative Adoption, Advanced targeting options and Post-view conversion tracking. These are just a few of the benefits of using technology such as programmatic.',
-  BOLD: 'Interesting fact! Achieve more with AI-powered display advertising, without extensive resources of money, time and expertise!',
+  FACT: 'Interesting fact!',
+  BOLD: 'Achieve more with AI-powered display advertising, without extensive resources of money, time and expertise!',
   TEXT_2: 'In 2020 online consumer spending in the US hit a record $813 billion, which was a 50% increase from 2019. For the 2021 year E-Commerce sales were $870 billion, paving the way for 2022 to become the first trillion-dollar year in E-Commerce.',
 } as const;
 
@@ -20,17 +21,19 @@ export const SEO = {
   TITLE: 'SEO',
   CONTENT_1: 'SEO or Search Engine Optimization is a set of measures to improve your website. SEO helps to make a website understandable for search engines and attractive to users. Thanks to competent promotion, users come to the site who are looking for their query in the Google search bar. If they are satisfied with the offer on the site, they will become customers of the business.',
   CONTENT_2: 'For the owner of a business it is very important that the website of his company gets on the first page of the search results and as close to the top of the list as possible. SEO helps to achieve exactly that goal.',
-  BULLET_POINTS: [
+  BULLET_POINTS_1: [
     'Understandable to search engines — means to tell Google by special means what exactly is on the site.',
     'Useful for customers — means to make sure that a person who is looking for a solution to his problem (information, product or service) in a search engine finds it on your site. It also means that the site should be modern, convenient and intuitive.',
+  ],
+  BULLET_POINTS_2_TITLE: 'Also here\'s some numbers',
+  BULLET_POINTS_2: [
     '61% of B2B marketers stated that SEO and Organic traffic generate more leads than any other marketing initiative.',
     '63% of all shopping begins online, even if the purchase itself happens in a store.',
-    'Over 56% of the businesses still didn’t do listing on Google My Business page, which ideally should be a starting point for online presence.',
+    'Over 56% of the businesses still didn\'t do listing on Google My Business page, which ideally should be a starting point for online presence.',
     'In the U.S alone, there were 221 million mobile search users in 2021'
   ],
   CONTENT_3: {
-    TITLE: 'And from the whole online advertisement world SEO',
-    CONTENT: 'is {{<bold>}}one of the most cost-effective marketing strategies,{{<bold/>}} because it targets users who are actively looking for your products and services online.'
+    CONTENT: 'And from the whole online advertisement world SEO is {{<bold>}}one of the most cost-effective marketing strategies,{{<bold/>}} because it targets users who are actively looking for your products and services online.'
   }
 } as const;
 

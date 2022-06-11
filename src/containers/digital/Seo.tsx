@@ -4,7 +4,7 @@ import Image from "next/image";
 import TickBodylessIcon from "../../../assets/icons/tick-bodyless-icon";
 
 import { SEO } from "./utils/constants";
-import { ImageGridContainerStyled, SeoContainerStyled } from "./utils/styled";
+import { BlockquoteStyled, ImageGridContainerStyled, SeoContainerStyled } from "./utils/styled";
 
 import image from "/assets/i-mac.png";
 
@@ -23,7 +23,7 @@ const Seo = (
           <Typography component="article" variant="body1">{SEO.CONTENT_2}</Typography>
           <Container sx={{ mt: { md: 6, xxs: 5 } }}>
             {
-              SEO.BULLET_POINTS.map((point) => (
+              SEO.BULLET_POINTS_1.map((point) => (
                 <BulletPointStyled key={point} variant="body1">
                   <TickBodylessIcon fontSize="large" color="primary" sx={{ mr: 4 }} />
                   {point}
@@ -33,21 +33,30 @@ const Seo = (
           </Container>
         </Grid>
       </Grid>
-      <Grid item maxWidth="lg" sx={{ textAlign: 'center' }}>
-        <Typography variant="h5" sx={{ pb: { xxs: 4, md: 8 } }}>
-          {SEO.CONTENT_3.TITLE}
-          <Typography
-            maxWidth="md"
-            component="article"
-            variant="body1"
-            sx={{ mt: 4, textAlign: 'start' }}
-            dangerouslySetInnerHTML={{
-              __html: SEO.CONTENT_3.CONTENT
-                .replace('{{<bold>}}', '<b>')
-                .replace('{{<bold/>}}', '</b>')
-            }}
-          />
-        </Typography>
+      <Grid item maxWidth="lg" sx={{ textAlign: 'start' }}>
+        <Typography component="p" variant="h5" sx={{ mb: 4, ml: 4 }}>{SEO.BULLET_POINTS_2_TITLE}</Typography>
+        <Container sx={{ mt: { md: 6, xxs: 5 } }}>
+          {
+            SEO.BULLET_POINTS_2.map((point) => (
+              <BulletPointStyled key={point} variant="body1">
+                <TickBodylessIcon fontSize="large" color="primary" sx={{ mr: 4 }} />
+                {point}
+              </BulletPointStyled>
+            ))
+          }
+        </Container>
+        <BlockquoteStyled
+          maxWidth="md"
+          component="article"
+          variant="body1"
+          sx={{ mt: 1, ml: 4, textAlign: 'start' }}
+          dangerouslySetInnerHTML={{
+            __html: SEO.CONTENT_3.CONTENT
+              .replace('{{<bold>}}', '<b>')
+              .replace('{{<bold/>}}', '</b>')
+          }}
+        >
+        </BlockquoteStyled>
       </Grid>
     </Grid>
   </SeoContainerStyled>

@@ -36,6 +36,7 @@ export type PaletteOptionsOverriden = {
     secondary: string;
     disabled: string;
     mediumGray: string;
+    goldContrast: string;
   };
   border: {
     gray: string;

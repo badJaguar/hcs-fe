@@ -64,7 +64,7 @@ const ResponsiveAppBar = () => {
                       backgroundColor: 'background.darkenGolden',
                     }
                   }}>
-                  <CallIcon />
+                  <CallIcon sx={{ color: "text.goldContrast" }} />
                 </IconButton>
                 : <Button variant="contained" onClick={simulateCall}>
                   {CALL_BACK}

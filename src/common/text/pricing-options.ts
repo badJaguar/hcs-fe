@@ -19,6 +19,11 @@ export const TAB_TEXT = [
     TITLE: 'ADVANCED',
     PRICE: '1999',
     BULLET_POINTS: ['Voice Activation', 'Google Business page', 'SEO and Website Analysis', 'Google Maps Optimization', 'Making up a plan for future SEO works with Digital advertising calculations'],
+  },
+  {
+    TITLE: 'DIGITAL',
+    PRICE: 'Custom',
+    BULLET_POINTS: ['Mobile Ads', 'Social Ads', 'Desktop Ads', 'Dynamic Retargeting', 'Search Ads', 'Audio', 'Video']
   }
 ];
 

@@ -26,4 +26,5 @@ export const PALETTE = {
   GOLDEN: '#E3C56C',
   GOLDEN_HOVER: '#bba870',
   TEXT_BLUE: '#287AE0',
+  TEXT_TO_GOLD_CONTRAST: '#02040F',
 };

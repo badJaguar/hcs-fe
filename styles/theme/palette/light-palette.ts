@@ -32,6 +32,7 @@ export default {
     disabled: PALETTE.TEXT_DISABLED,
     mediumGray: PALETTE.MEDIUM_GRAY,
     contrastText: PALETTE.WHITE,
+    goldContrast: PALETTE.TEXT_TO_GOLD_CONTRAST,
   },
   border: {
     gray: PALETTE.GRAY,

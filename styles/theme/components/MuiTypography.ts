@@ -72,6 +72,11 @@ export default {
       [defaultTheme.breakpoints.down("xs")]: {
         fontSize: "1.5rem"
       }
+    },
+    subtitle1: {
+      [defaultTheme.breakpoints.down("xs")]: {
+        fontSize: "1.4rem"
+      }
     }
   }
 };

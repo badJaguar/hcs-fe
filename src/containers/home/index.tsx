@@ -9,8 +9,8 @@ export const Home = () => {
     <>
       <MainBanner />
       <WhoWeAre />
-      <WhyUs />
       <WhyAreWeDoingThis />
+      <WhyUs />
     </>
   );
 };

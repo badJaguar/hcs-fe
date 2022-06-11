@@ -10,6 +10,7 @@ export default {
     },
     contained: {
       backgroundColor: '#E3C56C',
+      color: '#02040F',
       '&:hover': {
         backgroundColor: PALETTE.GOLDEN_HOVER
       }
