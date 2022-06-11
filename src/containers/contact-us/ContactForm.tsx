@@ -6,7 +6,6 @@ import {
   Snackbar, Typography
 } from "@mui/material";
 
-import ReactHookFormTextFieldOutlined from "common/react-hook-forms/ReactHookFormTextFieldOutlined";
 import ReactHookFormPhoneInput from "common/react-hook-forms/ReactHookFormPhoneInput";
 
 import { EmailFieldValues } from "./types";
@@ -15,6 +14,7 @@ import SnackbarAction from "./SnackbarAction";
 import TransitionLeft from "./TransientLeft";
 
 import 'react-phone-number-input/style.css';
+import { ReactHookFormTextFieldOutlinedStyled } from "./styled";
 
 const ContactForm = () => {
   const formValues = useForm<EmailFieldValues>({ mode: 'onChange', criteriaMode: 'all' });
@@ -61,7 +61,7 @@ const ContactForm = () => {
     >
       <Typography variant="body1">Name</Typography>
       <FormControl fullWidth sx={{ mt: 2 }}>
-        <ReactHookFormTextFieldOutlined
+        <ReactHookFormTextFieldOutlinedStyled
           control={formValues.control}
           placeholder="Enter your name"
           name={getKeyOf<EmailFieldValues>('name')}
@@ -72,7 +72,7 @@ const ContactForm = () => {
       </FormControl>
       <Typography variant="body1" sx={{ mt: 6 }}>Email</Typography>
       <FormControl fullWidth sx={{ mt: 2 }}>
-        <ReactHookFormTextFieldOutlined
+        <ReactHookFormTextFieldOutlinedStyled
           control={formValues.control}
           placeholder="your@email.com"
           name={getKeyOf<EmailFieldValues>('email')}
@@ -92,7 +92,7 @@ const ContactForm = () => {
       </FormControl>
       <Typography variant="body1" sx={{ mt: 6 }}>How can we help?</Typography>
       <FormControl fullWidth sx={{ mt: 2 }}>
-        <ReactHookFormTextFieldOutlined
+        <ReactHookFormTextFieldOutlinedStyled
           control={formValues.control}
           name={getKeyOf<EmailFieldValues>('question')}
           placeholder="Message"

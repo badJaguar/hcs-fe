@@ -4,6 +4,7 @@ import { Box } from "@mui/material";
 import runningHermesImg from "/assets/hermes-contact-us.svg";
 import columnImg from "/assets/column-contact-us.svg";
 import defaultTheme from "../../../styles/theme/defaultTheme";
+import ReactHookFormTextFieldOutlined from "common/react-hook-forms/ReactHookFormTextFieldOutlined";
 
 export const ContactUsWrapperStyled = styled(Box)(
   ({ theme }) => ({
@@ -57,4 +58,17 @@ export const BlueBgInsertStyled = styled(Box)({
       display: 'none'
     },
   }
+});
+
+export const ReactHookFormTextFieldOutlinedStyled = styled(
+  ReactHookFormTextFieldOutlined, { label: 'ReactHookFormTextFieldOutlinedStyled' }
+)({
+  '&>div': {
+    color: 'white'
+  },
+  'input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active': {
+    WebkitBoxShadow: '0 0 0 30px #3b86e3 inset !important',
+    mixBlendMode: 'color-burn',
+    WebkitTextFillColor: 'white'
+  },
 });

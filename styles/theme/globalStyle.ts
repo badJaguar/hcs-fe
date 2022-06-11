@@ -19,6 +19,15 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
       backgroundColor: theme.palette.border.gray,
     },
 
+    '::selection': {
+      color: theme.palette.text.primary,
+      background: theme.palette.background.golden,
+    },
+    '::-moz-selection': {
+      color: theme.palette.text.primary,
+      background: theme.palette.background.golden,
+    },
+
     'input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active': {
       '-webkit-box-shadow': '0 0 0 30px white inset !important',
       height: 0,

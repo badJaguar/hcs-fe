@@ -8,6 +8,7 @@ import useLocation from '../utility/useLocation';
 
 import Base from './_base';
 import image from "/assets/og-home.webp";
+
 import { SLOGAN_1, SLOGAN_3 } from 'common/text/home';
 
 const Home: NextPage = () => {
@@ -28,16 +29,10 @@ const Home: NextPage = () => {
           <meta data-rh="true" property="og:locale" content="en_US" />
           <meta data-rh="true" property="og:type" content="article" />
 
-          {/* og for company location */}
-          <meta data-rh="true" name="og:latitude" content="26.202160" />
-          <meta data-rh="true" name="og:longitude" content="-80.163660" />
-          <meta data-rh="true" name="og:street-address" content="1500 W Cypress Creek Rd #201" />
-          <meta data-rh="true" name="og:locality" content="Fort Lauderdale" />
-          <meta data-rh="true" name="og:region" content="FL" />
-          <meta data-rh="true" name="og:postal-code" content="33309" />
-          <meta data-rh="true" name="og:country-name" content="USA" />
-
           <meta property="og:image" content={`${image.src}`} />
+          <meta property="og:image:width" content={`${image.width}`} />
+          <meta property="og:image:height" content={`${image.height}`} />
+
           <meta data-rh="true" property="og:url" content={location?.hostname} />
           <meta property="og:site_name" content="Hermesolutions LLC" />
         </>

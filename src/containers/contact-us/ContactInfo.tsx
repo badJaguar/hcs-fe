@@ -30,7 +30,7 @@ const ContactInfo = () => {
           component="a"
           href={`tel:${COMPANY_NUMBER}`}
           variant={isDownMd ? "body1" : "caption"}
-          color="primary.dark"
+          color="secondary.light"
         >{COMPANY_NUMBER}</Typography>
       </Container>
       <Container sx={{ pt: { xxs: 4, md: 8 }, display: 'inline-flex', alignItems: 'center' }}>
@@ -39,7 +39,7 @@ const ContactInfo = () => {
           component="a"
           href={`mailto:${EMAIL}`}
           variant={isDownMd ? "body1" : "caption"}
-          color="primary.dark"
+          color="secondary.light"
         >{EMAIL}</Typography>
       </Container>
       <Container sx={{ pt: { xxs: 4, md: 8 }, display: 'inline-flex', alignItems: 'center' }}>
