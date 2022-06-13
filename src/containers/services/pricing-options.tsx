@@ -39,19 +39,22 @@ const PricingOptions = () => {
         </Grid>
         <CardsContainerStyled container>
 
-          <WhitePricingPaperStyled>
+          <BluePricingPaperStyled>
             <div>
-              <Typography sx={{ py: 3 }} variant="h5" color="text.mediumGray">{TAB_TEXT[0].TITLE}</Typography>
-              <Typography variant="h3"><sup><small>$</small></sup>{TAB_TEXT[0].PRICE}</Typography>
-              <Divider sx={{ my: { xxs: 3, md: 11.5 } }} />
+              <BestLabelStyled>
+                PROMOTIONAL OFFER
+              </BestLabelStyled>
+              <Typography sx={{ py: 3 }} variant="h5" color="secondary.light">{TAB_TEXT[0].TITLE}</Typography>
+              <Typography color="secondary" variant="h3"><sup><small>$</small></sup>{TAB_TEXT[0].PRICE}</Typography>
+              <Divider sx={{ my: { xxs: 3, md: 12.5 }, borderColor: 'white' }} />
               <BulletPointContainerStyled>
-                <BulletPointStyled variant="subtitle1">
-                  <TickIcon fontSize="large" color="primary" sx={{ mr: 2, width: { xxs: 16, md: 22 }, height: { xxs: 16, md: 22 } }} />
+                <BulletPointStyled color="secondary" variant="subtitle1">
+                  <TickIcon fontSize="large" color="secondary" sx={{ mr: 2, width: { xxs: 16, md: 22 }, height: { xxs: 16, md: 22 } }} />
                   {TAB_TEXT[0].BULLET_POINT}
                 </BulletPointStyled>
                 {
                   TAB_TEXT[0].BULLET_POINTS.map((point) => (
-                    <BulletPointStyled key={point} variant="subtitle1">
+                    <BulletPointStyled color="secondary" key={point} variant="subtitle1">
                       <span style={{ marginLeft: 24 }} />&#8212;&nbsp;
                       {point}
                     </BulletPointStyled>
@@ -59,6 +62,32 @@ const PricingOptions = () => {
                 }
                 {
                   TAB_TEXT[0].OTHER_ADVANTAGES.map((point) => (
+                    <BulletPointStyled key={point} variant="subtitle1" color="secondary">
+                      <TickIcon fontSize="large" color="secondary" sx={{ mr: 2, width: { xxs: 16, md: 22 }, height: { xxs: 16, md: 22 } }} />
+                      {point}
+                    </BulletPointStyled>
+                  ))
+                }
+              </BulletPointContainerStyled>
+
+            </div>
+            <Button
+              variant="contained"
+              onClick={handleClick}
+              fullWidth
+              sx={{ mb: 6 }}
+            >{BUTTON_TEXT}</Button>
+          </BluePricingPaperStyled>
+
+          <WhitePricingPaperStyled>
+            <div>
+              <Typography sx={{ py: 3 }} color="text.mediumGray" variant="h5">{TAB_TEXT[1].TITLE}</Typography>
+              <Typography color="primary" variant="h3"><sup><small>$</small></sup>{TAB_TEXT[1].PRICE}</Typography>
+
+              <Divider sx={{ my: { xxs: 3, md: 11.5 } }} />
+              <BulletPointContainerStyled>
+                {
+                  TAB_TEXT[1].BULLET_POINTS.map((point) => (
                     <BulletPointStyled key={point} variant="subtitle1" color="primary">
                       <TickIcon fontSize="large" color="primary" sx={{ mr: 2, width: { xxs: 16, md: 22 }, height: { xxs: 16, md: 22 } }} />
                       {point}
@@ -73,33 +102,6 @@ const PricingOptions = () => {
               fullWidth
             >{BUTTON_TEXT}</Button>
           </WhitePricingPaperStyled>
-
-          <BluePricingPaperStyled>
-            <div>
-              <BestLabelStyled>
-                BEST
-              </BestLabelStyled>
-              <Typography color="secondary.light" sx={{ py: 3 }} variant="h5">{TAB_TEXT[1].TITLE}</Typography>
-              <Typography color="secondary" variant="h3"><sup><small>$</small></sup>{TAB_TEXT[1].PRICE}</Typography>
-              <Divider sx={{ my: { xxs: 3, md: 12.5 }, borderColor: 'white' }} />
-              <BulletPointContainerStyled>
-                {
-                  TAB_TEXT[1].BULLET_POINTS.map((point) => (
-                    <BulletPointStyled key={point} variant="subtitle1" color="secondary">
-                      <TickIcon fontSize="large" color="secondary" sx={{ mr: 2, width: { xxs: 16, md: 22 }, height: { xxs: 16, md: 22 } }} />
-                      {point}
-                    </BulletPointStyled>
-                  ))
-                }
-              </BulletPointContainerStyled>
-            </div>
-            <Button
-              variant="contained"
-              onClick={handleClick}
-              fullWidth
-              sx={{ mb: 6 }}
-            >{BUTTON_TEXT}</Button>
-          </BluePricingPaperStyled>
 
           <WhitePricingPaperStyled>
             <div>

@@ -12,7 +12,7 @@ export const TAB_TEXT = [
     OTHER_ADVANTAGES: ['Google Maps Optimization', 'Basic Google Business page info']
   },
   {
-    TITLE: 'PRO',
+    TITLE: 'STANDART',
     PRICE: '1399',
     BULLET_POINTS: ['Voice Activation', 'Complete Google Business page', ' Internal Search Engine Optimisation (SEO)', 'Website Analysis', 'Technical Analysis', 'Monthly reports', 'Goal Adjustment'],
   },
