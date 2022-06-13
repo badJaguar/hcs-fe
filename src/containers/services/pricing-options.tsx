@@ -57,13 +57,20 @@ const PricingOptions = () => {
                     </BulletPointStyled>
                   ))
                 }
+                {
+                  TAB_TEXT[0].OTHER_ADVANTAGES.map((point) => (
+                    <BulletPointStyled key={point} variant="subtitle1" color="primary">
+                      <TickIcon fontSize="large" color="primary" sx={{ mr: 2, width: { xxs: 16, md: 22 }, height: { xxs: 16, md: 22 } }} />
+                      {point}
+                    </BulletPointStyled>
+                  ))
+                }
               </BulletPointContainerStyled>
             </div>
             <Button
               variant="contained"
               onClick={handleClick}
               fullWidth
-            // sx={{ my: { md: 12.5, xxs: 'auto' }, mt: { md: 16, xxs: 'auto' } }}
             >{BUTTON_TEXT}</Button>
           </WhitePricingPaperStyled>
 
@@ -114,7 +121,6 @@ const PricingOptions = () => {
               variant="contained"
               onClick={handleClick}
               fullWidth
-            // sx={{ my: { xs: 12.5, xxs: 'auto' } }}
             >{BUTTON_TEXT}</Button>
           </WhitePricingPaperStyled>
 
@@ -122,12 +128,17 @@ const PricingOptions = () => {
             <div>
               <Typography sx={{ py: 3 }} variant="h5" color="text.mediumGray">{TAB_TEXT[3].TITLE}</Typography>
               <Typography variant="h3">{TAB_TEXT[3].PRICE}</Typography>
-              <Divider sx={{ my: { xxs: 3, md: 12.5 } }} />
+              <Typography variant="body1">{TAB_TEXT[3].PRICE_INFO}</Typography>
+              <Divider sx={{ mb: { xxs: 3, md: 12.5 }, mt: { xxs: 3, md: 9.5 } }} />
               <BulletPointContainerStyled>
                 {
                   TAB_TEXT[3].BULLET_POINTS.map((point) => (
                     <BulletPointStyled textAlign="left" key={point} variant="subtitle1">
-                      <TickIcon fontSize="large" color="primary" sx={{ mr: 2, width: { xxs: 16, md: 22 }, height: { xxs: 16, md: 22 } }} />
+                      <TickIcon
+                        fontSize="large"
+                        color="primary"
+                        sx={{ mr: 2, width: { xxs: 16, md: 22 }, height: { xxs: 16, md: 22 } }}
+                      />
                       {point}
                     </BulletPointStyled>
                   ))
@@ -138,7 +149,6 @@ const PricingOptions = () => {
               variant="contained"
               onClick={handleClick}
               fullWidth
-            // sx={{ my: { xs: 6, xxs: 'auto' } }}
             >{BUTTON_TEXT}</Button>
           </WhitePricingPaperStyled>
 
