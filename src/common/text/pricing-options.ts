@@ -9,17 +9,17 @@ export const TAB_TEXT = [
     PRICE: '299',
     BULLET_POINT: 'Voice Activation',
     BULLET_POINTS: ['Amazon Alexa', 'Samsung Bixby', 'Apple Siri', 'Microsoft Cortana', 'Google Assistant'],
-    OTHER_ADVANTAGES: ['Google Maps Optimization', 'Basic Google Business page info']
+    OTHER_ADVANTAGES: ['Directories Review and Optimization', 'Creating Necessary Directories']
   },
   {
     TITLE: 'STANDARD',
     PRICE: '1399',
-    BULLET_POINTS: ['Voice Activation', 'Complete Google Business page', ' Internal Search Engine Optimisation (SEO)', 'Website Analysis', 'Technical Analysis', 'Monthly reports', 'Goal Adjustment'],
+    BULLET_POINTS: ['Voice Activation', 'Google Business Page', 'Internal Search Engine Optimisation (SEO)', 'Website Technical Analysis', '10-15 Keywords', 'Monthly Reports', 'Goal Adjustment'],
   },
   {
     TITLE: 'ADVANCED',
     PRICE: '1999',
-    BULLET_POINTS: ['Voice Activation', 'Google Business page', 'Social Media links verifiaction', 'Full Search Engine Optimisation (SEO)', ' Website Analysis', 'Technical Analysis', 'Monthly reports', 'Goal Adjustment', 'Monthly updates', 'Digital advertising calculation'],
+    BULLET_POINTS: ['Voice Activation', 'Google Business Page', 'Social Media Links Verifiaction', 'Full Search Engine Optimisation (SEO)', 'Website Technical Analysis', '20-25 Keywords', 'Monthly Reports', 'Goal Adjustment', 'Digital Advertising Calculation'],
   },
   {
     TITLE: 'DIGITAL',

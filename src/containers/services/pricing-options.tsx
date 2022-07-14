@@ -16,6 +16,7 @@ import {
   WhitePricingPaperStyled
 } from "./utils/styled";
 import { CulumnsStyledSectionStyled, WhatWeCanStyled } from "utils/styled";
+// import { Experiment } from './experiment';
 
 const PricingOptions = () => {
   const isDownMd = useScreenDown("md");
@@ -44,6 +45,7 @@ const PricingOptions = () => {
               <BestLabelStyled>
                 PROMOTIONAL OFFER
               </BestLabelStyled>
+              {/* <Experiment /> */}
               <Typography sx={{ py: 3 }} variant="h5" color="secondary.light">{TAB_TEXT[0].TITLE}</Typography>
               <Typography color="secondary" variant="h3"><sup><small>$</small></sup>{TAB_TEXT[0].PRICE}</Typography>
               <Divider sx={{ my: { xxs: 3, md: 12.5 }, borderColor: 'white' }} />
