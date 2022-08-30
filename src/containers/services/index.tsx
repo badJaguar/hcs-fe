@@ -1,7 +1,7 @@
 import MainBanner from "./MainBanner";
 import PricingOptions from "./pricing-options";
 
-export const Services = () => {
+const Services = () => {
 
   return (
     <>
@@ -10,3 +10,5 @@ export const Services = () => {
     </>
   );
 };
+
+export default Services;

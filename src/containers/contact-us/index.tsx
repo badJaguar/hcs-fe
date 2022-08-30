@@ -12,7 +12,7 @@ import TransitionLeft from "./TransientLeft";
 
 import { BlueBgInsertStyled, ContactUsContainerStyled, ContactUsWrapperStyled } from "./styled";
 
-export const ContactUs = () => {
+const ContactUs = () => {
   const router = useRouter();
 
   const [open, setOpen] = React.useState(false);
@@ -76,3 +76,5 @@ export const ContactUs = () => {
     </ContactUsWrapperStyled>
   );
 };
+
+export default ContactUs;

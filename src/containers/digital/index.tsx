@@ -6,7 +6,7 @@ import Seo from "./Seo";
 import SeoAdvantages from "./SeoAdvantages";
 import SeoGive from "./SeoGive";
 
-export const Digital = () => {
+const Digital = () => {
   return (
     <Grid container>
       {MainBanner}
@@ -17,3 +17,5 @@ export const Digital = () => {
     </Grid>
   );
 };
+
+export default Digital;

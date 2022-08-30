@@ -1,12 +1,17 @@
 import { MAIN_BANNER } from 'containers/digital/utils/constants';
 import type { NextPage } from 'next';
+import dynamic from 'next/dynamic';
+import { Suspense } from 'react';
 
-import { Digital as DigitalComponent } from '../src/containers/digital';
 import useLocation from '../utility/useLocation';
 
 import Base from './_base';
 
 import image from '/assets/i-mac.png';
+
+const DigitalDynamic = dynamic(() => import('../src/containers/digital'), {
+  suspense: true,
+});
 
 const Digital: NextPage = () => {
   const location = useLocation();
@@ -17,7 +22,7 @@ const Digital: NextPage = () => {
       headElements={
         <>
           <meta data-rh="true" name="title" content="Digital Advertising" />
-          <meta data-rh="true" name="keywords" content="Keyword1, Keyword2, Keyword3" />
+          <meta data-rh="true" name="keywords" content="digital retargeting, retargeting website visitors, pinterest advertising, facebook ads marketing company, facebook ad instagram, facebook and instagram ads, retargeting audience facebook, facebook retargeting ads, linkedin retargeting ads" />
           <meta data-rh="true" name="description" content={MAIN_BANNER.SUBTITLE} />
           <link data-rh="true" rel="canonical" href={location?.href} />
 
@@ -31,7 +36,9 @@ const Digital: NextPage = () => {
         </>
       }
     >
-      <DigitalComponent />
+      <Suspense fallback="Loading">
+        <DigitalDynamic />
+      </Suspense>
     </Base>
   );
 };
